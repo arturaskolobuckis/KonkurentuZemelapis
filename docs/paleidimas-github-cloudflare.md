@@ -28,9 +28,14 @@ http://localhost:4173
 
 ## GitHub
 
-1. Sukurti naują GitHub repozitoriją, pvz. `konkurentu-zemelapis`.
-2. Įkelti visus projekto failus.
-3. Patikrinti, kad repozitorijoje yra:
+Repozitorija:
+
+```text
+https://github.com/arturaskolobuckis/KonkurentuZemelapis
+```
+
+1. Įkelti visus projekto failus.
+2. Patikrinti, kad repozitorijoje yra:
 
 ```text
 data/companies.xlsx
@@ -44,6 +49,12 @@ public/data/companies.json
 GitHub Actions savaitinis atnaujinimas veiks pirmadieniais 05:00 UTC ir gali būti paleistas ranka per `workflow_dispatch`.
 
 ## Cloudflare Pages
+
+Cloudflare Pages nuoroda:
+
+```text
+Bus užpildyta po pirmo deploy.
+```
 
 1. Cloudflare Pages pasirinkti `Connect to Git`.
 2. Pasirinkti GitHub repozitoriją.
