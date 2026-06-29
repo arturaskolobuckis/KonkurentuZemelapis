@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="lt">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Konkurentų žemėlapis</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIINfQArLdrf9R2O3qj6hccsSIFfXwA2bXQ="
+      crossorigin=""
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Filtrai ir įmonių sąrašas">
+        <header class="sidebar-header">
+          <p class="eyebrow">UAB Betono centras</p>
+          <h1>Konkurentų žemėlapis</h1>
+          <p class="scope">Visa Lietuva. Betono mišiniai, betono mazgai ir gelžbetonis.</p>
+        </header>
+
+        <section class="filters" aria-label="Filtrai">
+          <label>
+            Miestas
+            <select id="cityFilter">
+              <option value="all">Visi miestai</option>
+            </select>
+          </label>
+          <label>
+            Veikla
+            <select id="activityFilter">
+              <option value="all">Visos veiklos</option>
+            </select>
+          </label>
+          <label>
+            Paieška
+            <input id="searchInput" type="search" placeholder="Įmonė, miestas arba adresas" />
+          </label>
+          <label>
+            Duomenų pilnumas
+            <select id="completenessFilter">
+              <option value="all">Visi įrašai</option>
+              <option value="needs_manual">Reikia papildyti ranka</option>
+              <option value="has_plant_name">Yra mazgo pavadinimas</option>
+              <option value="has_capacity">Yra našumas</option>
+            </select>
+          </label>
+        </section>
+
+        <section class="stats" aria-label="Santrauka">
+          <div>
+            <strong id="companyCount">0</strong>
+            <span>įrašai</span>
+          </div>
+          <div>
+            <strong id="cityCount">0</strong>
+            <span>miestai</span>
+          </div>
+        </section>
+
+        <section class="list-panel" aria-label="Imoniu sarasas">
+          <div class="panel-title">Įmonės</div>
+          <div id="companyList" class="company-list"></div>
+        </section>
+      </aside>
+
+      <main class="map-panel">
+        <div id="map" aria-label="Interaktyvus žemėlapis"></div>
+      </main>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

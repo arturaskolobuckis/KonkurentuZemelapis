@@ -1,0 +1,84 @@
+{
+  "checked_at": "2026-06-29T19:52:14.941065+00:00",
+  "rows": 26,
+  "scope": "Visa Lietuva",
+  "issues": [],
+  "sources": [
+    {
+      "url": "https://autokausta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://betonobaze.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://betonocentras.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://gelmesta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://inhus.eu/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://statkasta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://transdosa.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://ukmergesgelzbetonis.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.gelzbetonineskonstrukcijos.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.gkg3.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.heidelbergmaterials.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.kaunogelzbetonis.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.palmusta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.perdanga.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.suduvos-betonas.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    }
+  ],
+  "note": "MVP source check for seed rows. Full JAR/Sodra importer is the next iteration."
+}

@@ -1,0 +1,36 @@
+name: Weekly data update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: python -m pip install openpyxl
+
+      - name: Check free sources
+        run: python scripts/fetch_open_data.py
+
+      - name: Build Excel and map JSON
+        run: python scripts/build_mvp.py
+
+      - name: Commit generated data
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update competitor map data"
+          file_pattern: "data/companies.xlsx data/source-check.json public/data/companies.json"
