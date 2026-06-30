@@ -1,9 +1,14 @@
 {
-  "checked_at": "2026-06-29T19:52:14.941065+00:00",
-  "rows": 26,
+  "checked_at": "2026-06-30T04:04:37.628874+00:00",
+  "rows": 45,
   "scope": "Visa Lietuva",
   "issues": [],
   "sources": [
+    {
+      "url": "https://alytausgelzbetonis.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
     {
       "url": "https://autokausta.lt/",
       "ok": true,
@@ -20,7 +25,27 @@
       "status": 200
     },
     {
+      "url": "https://betonozona.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
       "url": "https://gelmesta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://gelzbetoniogamyba.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://gernora.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://glg.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
@@ -30,7 +55,37 @@
       "status": 200
     },
     {
+      "url": "https://inroma.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://pamariogrupe.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://pamatas.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://sbetonas.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://sodbeta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
       "url": "https://statkasta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://topbeton.lt/",
       "ok": true,
       "status": 200
     },
@@ -41,6 +96,31 @@
     },
     {
       "url": "https://ukmergesgelzbetonis.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://utenosbetonas.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.1551.lt/kalcitas-ab-betonas-betono-misiniai-betono-gamybos-linija-technikos-nuoma-naujojoje-akmeneje-59982/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.1551.lt/re-betono-konstrukcijos-uab-betonas-cementas-betono-siurblys-pamatu-blokai-kretingoje-104253/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.1551.lt/sausta-uab-240915/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.1551.lt/seldra-uab-prekinio-betono-gamyba-ir-prekyba-vilniuje-219193/",
       "ok": true,
       "status": 200
     },
@@ -75,7 +155,22 @@
       "status": 200
     },
     {
+      "url": "https://www.silalesstatyba.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.spec.lt/imone/panevezio-gelzbetonis-uab",
+      "ok": true,
+      "status": 200
+    },
+    {
       "url": "https://www.suduvos-betonas.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.vbg.lt/",
       "ok": true,
       "status": 200
     }

@@ -5,6 +5,7 @@ Tikslas: automatizuotai rinkti ir atnaujinti informaciją apie Lietuvos įmones,
 ## Dabartinė versija
 
 - Apimtis: visa Lietuva.
+- Dabartinis duomenų kiekis: 45 įrašai, 24 miestai / vietovės.
 - Vieša žemėlapio nuoroda: https://konkurentuzemelapis.pages.dev
 - GitHub repozitorija: https://github.com/arturaskolobuckis/KonkurentuZemelapis
 - Duomenų laikmena: `data/companies.xlsx`.
