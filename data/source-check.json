@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-06-30T11:58:30.983283+00:00",
-  "rows": 58,
+  "checked_at": "2026-06-30T12:13:09.835640+00:00",
+  "rows": 59,
   "scope": "Visa Lietuva",
   "issues": [],
   "sources": [
@@ -56,8 +56,8 @@
     },
     {
       "url": "https://inroma.lt/",
-      "ok": true,
-      "status": 200
+      "ok": false,
+      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
     },
     {
       "url": "https://pamariogrupe.lt/",
@@ -171,6 +171,11 @@
     },
     {
       "url": "https://www.suduvos-betonas.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.tkeliai.lt/kitos-paslaugos/",
       "ok": true,
       "status": 200
     },
