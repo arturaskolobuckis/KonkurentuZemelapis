@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-06-30T04:04:37.628874+00:00",
+  "checked_at": "2026-06-30T04:22:25.145314+00:00",
   "rows": 45,
   "scope": "Visa Lietuva",
   "issues": [],
@@ -76,6 +76,11 @@
     },
     {
       "url": "https://sodbeta.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://spsc.lt/registrai/regsapp/ser_produktai_view.php?editid1=13020",
       "ok": true,
       "status": 200
     },

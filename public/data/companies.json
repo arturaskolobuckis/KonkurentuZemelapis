@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T04:05:06.732336+00:00",
+  "generated_at": "2026-06-30T04:22:16.587905+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -76,9 +76,9 @@
       "market_role": "Mūsų įmonė",
       "city": "Klaipėda",
       "municipality": "Klaipėdos m. sav.",
-      "address": "Liepų g. 85, Klaipėda",
-      "latitude": 55.7255212,
-      "longitude": 21.159293,
+      "address": "Liepų g. 87N, Klaipėda",
+      "latitude": 55.7292816,
+      "longitude": 21.1540759,
       "activity_type": "ready_mix_concrete",
       "activity_label": "Betono mišiniai",
       "concrete_plant_name": "Klaipėdos betono mazgas",
@@ -90,13 +90,13 @@
       "employees_latest": null,
       "vehicles_latest": null,
       "website": "https://betonocentras.lt/",
-      "source_url": "https://betonocentras.lt/kontaktai/",
+      "source_url": "https://spsc.lt/registrai/regsapp/ser_produktai_view.php?editid1=13020",
       "revenue_source_url": "",
       "employees_source_url": "",
       "vehicles_source_url": "",
-      "plant_source_url": "https://betonocentras.lt/kontaktai/",
-      "manual_note": "",
-      "last_updated": "2026-06-29"
+      "plant_source_url": "https://spsc.lt/registrai/regsapp/ser_produktai_view.php?editid1=13020",
+      "manual_note": "Adresas ir koordinatės patikslinti pagal Google Maps ir SPSC registro įrašą.",
+      "last_updated": "2026-06-30"
     },
     {
       "company_id": "betono-centras-siauliai",
