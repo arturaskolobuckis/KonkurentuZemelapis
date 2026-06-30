@@ -5,6 +5,8 @@ Tikslas: automatizuotai rinkti ir atnaujinti informaciją apie Lietuvos įmones,
 ## Dabartinė versija
 
 - Apimtis: visa Lietuva.
+- Vieša žemėlapio nuoroda: https://konkurentuzemelapis.pages.dev
+- GitHub repozitorija: https://github.com/arturaskolobuckis/KonkurentuZemelapis
 - Duomenų laikmena: `data/companies.xlsx`.
 - Žemėlapio duomenys: `public/data/companies.json`.
 - Žemėlapis: statinis Leaflet puslapis aplanke `public/`.

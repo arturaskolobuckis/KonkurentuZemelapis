@@ -53,11 +53,11 @@ GitHub Actions savaitinis atnaujinimas veiks pirmadieniais 05:00 UTC ir gali bū
 Cloudflare Pages nuoroda:
 
 ```text
-Bus užpildyta po pirmo deploy.
+https://konkurentuzemelapis.pages.dev
 ```
 
 1. Cloudflare Pages pasirinkti `Connect to Git`.
-2. Pasirinkti GitHub repozitoriją.
+2. Pasirinkti GitHub repozitoriją `arturaskolobuckis/KonkurentuZemelapis`.
 3. Build nustatymai:
 
 ```text
@@ -67,7 +67,7 @@ Build output directory: public
 Root directory: /
 ```
 
-4. Po pirmo deploy Cloudflare duos viešą nuorodą.
+4. Pirmas deploy atliktas ir patikrintas 2026-06-30.
 
 ## Ribojimai
 
