@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-30T12:13:10.675676+00:00",
+  "generated_at": "2026-06-30T12:21:46.757242+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -42,7 +42,8 @@
       "coordinate_match_address": "Naujoji Riovonių g. 11, 03153, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "betono-centras-kaunas",
@@ -78,7 +79,8 @@
       "coordinate_match_address": "Raudondvario pl. 157, 47171, Kaunas, Kauno m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "betono-centras-klaipeda",
@@ -114,7 +116,8 @@
       "coordinate_match_address": "Liepų g. 87N, 92195, Klaipėda, Klaipėdos m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "betono-centras-siauliai",
@@ -150,7 +153,8 @@
       "coordinate_match_address": "Daubos g. 7A, 78150, Šiauliai, Šiaulių m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "betono-centras-mazeikiai",
@@ -186,7 +190,8 @@
       "coordinate_match_address": "Troškučių g. 1, 89101, Mažeikiai, Mažeikių sen., Mažeikių r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "betono-centras-panevezys",
@@ -222,7 +227,8 @@
       "coordinate_match_address": "S. Kerbedžio g. 52A, 35113, Panevėžys, Panevėžio m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "heidelberg-vilnius-siaures",
@@ -258,7 +264,8 @@
       "coordinate_match_address": "Šiaurės g. 2, 11101, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "heidelberg-vilnius-sandeliu",
@@ -294,7 +301,8 @@
       "coordinate_match_address": "Sandėlių g. 16, 02248, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "heidelberg-kaunas",
@@ -330,7 +338,8 @@
       "coordinate_match_address": "Technikos g. 7K, 51209, Kaunas, Kauno m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "heidelberg-klaipeda",
@@ -366,7 +375,8 @@
       "coordinate_match_address": "Švepelių g. 5, 94103, Klaipėda, Klaipėdos m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "heidelberg-alytus",
@@ -402,7 +412,8 @@
       "coordinate_match_address": "Kalniškės g. 2, 62175, Alytus, Alytaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "heidelberg-pasvalys",
@@ -438,7 +449,8 @@
       "coordinate_match_address": "Beržų g., Pasvalys, Pasvalio miesto sen., Pasvalio r. sav.",
       "coordinate_match_score": 98.0,
       "coordinate_match_type": "StreetName",
-      "coordinate_quality": "Gatvės lygio taškas; reikia tikslesnio adreso taško"
+      "coordinate_quality": "Gatvės lygio taškas; reikia tikslesnio adreso taško",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "palmusta-vilnius",
@@ -474,7 +486,8 @@
       "coordinate_match_address": "Sudervės kel. 1A, 07195, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 97.06,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "gkg3-vilnius",
@@ -510,7 +523,8 @@
       "coordinate_match_address": "Šaltupio g. 11, 02300, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "perdanga-vilnius",
@@ -546,7 +560,8 @@
       "coordinate_match_address": "Lentvario g. 16, 02300, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "perdanga-klaipeda",
@@ -582,7 +597,8 @@
       "coordinate_match_address": "Dubysos g. 27, 91181, Klaipėda, Klaipėdos m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "kauno-gelzbetonis-kaunas",
@@ -618,7 +634,8 @@
       "coordinate_match_address": "Pramonės pr. 8, 51223, Kaunas, Kauno m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "ukmerges-gelzbetonis-ukmerge",
@@ -654,7 +671,8 @@
       "coordinate_match_address": "Antakalnio g. 60, 20144, Ukmergė, Ukmergės miesto sen., Ukmergės r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "gelzbetonines-konstrukcijos-siauliai",
@@ -690,7 +708,8 @@
       "coordinate_match_address": "Sodo g. 20A, 76178, Šiauliai, Šiaulių m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "inhus-senieji-trakai",
@@ -726,7 +745,8 @@
       "coordinate_match_address": "Plačioji g. 27, 21146, Senieji Trakai, Senųjų Trakų sen., Trakų r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "gelmesta-vievis",
@@ -762,7 +782,8 @@
       "coordinate_match_address": "Statybininkų g. 1B, 21389, Vievis, Vievio sen., Elektrėnų sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "suduvos-betonas-marijampole",
@@ -798,7 +819,8 @@
       "coordinate_match_address": "Sporto g. 9H, 68108, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "statkasta-kaunas",
@@ -834,7 +856,8 @@
       "coordinate_match_address": "Marvelės g. 199B, 46204, Kaunas, Kauno m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "autokausta-kaunas",
@@ -870,7 +893,8 @@
       "coordinate_match_address": "Marvelės g. 199B, 46204, Kaunas, Kauno m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "betono-baze-visaginas",
@@ -906,7 +930,8 @@
       "coordinate_match_address": "Elektrinės g. 11, 31152, Drūkšinių k., Visagino sav.",
       "coordinate_match_score": 98.85,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "transdosa-druskininkai",
@@ -942,7 +967,8 @@
       "coordinate_match_address": "Žvyro g. 2A, 67266, Margų k., Leipalingio sen., Druskininkų sav.",
       "coordinate_match_score": 98.57,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -978,7 +1004,8 @@
       "coordinate_match_address": "Sodo g. 20, 76178, Šiauliai, Šiaulių m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "149720232",
@@ -1014,7 +1041,8 @@
       "coordinate_match_address": "Pramonės g. 15, 62175, Alytus, Alytaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1050,7 +1078,8 @@
       "coordinate_match_address": "Vingio g. 2M, 68311, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1086,7 +1115,8 @@
       "coordinate_match_address": "Tiekėjų g. 27B, 97187, Kretinga, Kretingos miesto sen., Kretingos r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1122,7 +1152,8 @@
       "coordinate_match_address": "Lauryno Ivinskio g. 7, 75113, Vingininkai, Šilalės kaimiškoji sen., Šilalės r. sav.",
       "coordinate_match_score": 98.52,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1158,7 +1189,8 @@
       "coordinate_match_address": "S. Kerbedžio g. 52, 35113, Panevėžys, Panevėžio m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1194,7 +1226,8 @@
       "coordinate_match_address": "Tryškių g. 46, 88102, Dimaičių k., Degaičių sen., Telšių r. sav.",
       "coordinate_match_score": 98.37,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1230,7 +1263,8 @@
       "coordinate_match_address": "A. Jakšto g. 5, 01105, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1266,7 +1300,8 @@
       "coordinate_match_address": "Kaukėnų g. 12, 92321, Kalnuvėnai, Sendvario sen., Klaipėdos r. sav.",
       "coordinate_match_score": 98.4,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1302,7 +1337,8 @@
       "coordinate_match_address": "Dvaro g. 6, 92347, Klaipėda, Klaipėdos m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "307083610",
@@ -1338,7 +1374,8 @@
       "coordinate_match_address": "Beržų g. 5C, 36237, Panevėžys, Panevėžio m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1374,7 +1411,8 @@
       "coordinate_match_address": "S. Kerbedžio g. 52, 35113, Panevėžys, Panevėžio m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1410,7 +1448,8 @@
       "coordinate_match_address": "Pramonės g. 5B, 83182, Pakruojis, Pakruojo sen., Pakruojo r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1446,7 +1485,8 @@
       "coordinate_match_address": "Onos Miciūtės g. 7, 08442, Vilnius, Vilniaus m. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "300904691",
@@ -1482,7 +1522,8 @@
       "coordinate_match_address": "Metalo g. 9B, 28217, Utena, Utenos miesto sen., Utenos r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "300902683",
@@ -1518,7 +1559,8 @@
       "coordinate_match_address": "Skarulių g. 58, 55198, Jonava, Jonavos sen., Jonavos r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1554,7 +1596,8 @@
       "coordinate_match_address": "J. Dalinkevičiaus g. 2, 85118, Naujoji Akmenė, Naujosios Akmenės miesto sen., Akmenės r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "",
@@ -1590,7 +1633,8 @@
       "coordinate_match_address": "Nemuno g. 1, 71422, Gelgaudiškis, Gelgaudiškio sen., Šakių r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_code": "145744638",
@@ -1626,7 +1670,8 @@
       "coordinate_match_address": "Karaimų g. 73, 21104, Trakai, Trakų sen., Trakų r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "ginfa-kutiskiai",
@@ -1662,7 +1707,8 @@
       "coordinate_match_address": "Alyvų g. 8, 82100, Kutiškiai, Radviliškio sen., Radviliškio r. sav.",
       "coordinate_match_score": 95.84,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "antano-gribino-imone-prienai",
@@ -1698,7 +1744,8 @@
       "coordinate_match_address": "Kęstučio g. 95A, 59142, Prienai, Prienų sen., Prienų r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "kelsera-anavilis",
@@ -1734,7 +1781,8 @@
       "coordinate_match_address": "Bitininkų g. 13, 14271, Anavilis, Paberžės sen., Vilniaus r. sav.",
       "coordinate_match_score": 98.33,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "altimas-avizieniai",
@@ -1770,7 +1818,8 @@
       "coordinate_match_address": "Vaikystės g. 10, 14184, Avižieniai, Avižienių sen., Vilniaus r. sav.",
       "coordinate_match_score": 98.4,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "vinido-taurage",
@@ -1806,7 +1855,8 @@
       "coordinate_match_address": "Gaurės g. 32, 72343, Tauragė, Tauragės miesto sen., Tauragės r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "santvara-kedainiai",
@@ -1842,7 +1892,8 @@
       "coordinate_match_address": "Aruodų g. 34, 57347, Kėdainiai, Kėdainių miesto sen., Kėdainių r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "eurobetonas-visaginas",
@@ -1878,7 +1929,8 @@
       "coordinate_match_address": "Sandėlių g. 1, 31147, Karlų k., Visagino sav.",
       "coordinate_match_score": 98.67,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "medis-ir-betonas-naujoji-akmene",
@@ -1914,7 +1966,8 @@
       "coordinate_match_address": "J. Dalinkevičiaus g. 2, 85118, Naujoji Akmenė, Naujosios Akmenės miesto sen., Akmenės r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "ekobetonas-marijampole",
@@ -1950,7 +2003,8 @@
       "coordinate_match_address": "Gamyklų g. 3, 68108, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "rokbetonis-rokiskis",
@@ -1986,7 +2040,8 @@
       "coordinate_match_address": "Vydūno g. 12A, 42170, Parokiškė, Rokiškio kaimiškoji sen., Rokiškio r. sav.",
       "coordinate_match_score": 98.09,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "beton-eura-dovainonys",
@@ -2022,7 +2077,8 @@
       "coordinate_match_address": "Žilvičių g. 2, 56341, Dovainonys, Rumšiškių sen., Kaišiadorių r. sav.",
       "coordinate_match_score": 97.78,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "silutes-betonas-silute",
@@ -2058,7 +2114,8 @@
       "coordinate_match_address": "Ramučių g. 1, 99151, Šilutė, Šilutės sen., Šilutės r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "kruszbet-lithuania-jure",
@@ -2094,7 +2151,8 @@
       "coordinate_match_address": "Medelyno g. 30A, 69447, Jūrė, Kazlų Rūdos sen., Kazlų Rūdos sav.",
       "coordinate_match_score": 98.57,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     },
     {
       "company_id": "telsiu-keliai-telsiai",
@@ -2130,7 +2188,8 @@
       "coordinate_match_address": "Mažeikių g. 18, 87101, Telšiai, Telšių miesto sen., Telšių r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas"
+      "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_silos_count": ""
     }
   ]
 }

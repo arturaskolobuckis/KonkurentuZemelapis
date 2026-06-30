@@ -78,6 +78,7 @@ function popupHtml(company) {
   const employees = company.employees_latest ?? "Nėra duomenų";
   const vehicles = company.vehicles_latest ?? "Nėra duomenų";
   const capacity = company.concrete_plant_capacity || "Nėra duomenų";
+  const silosCount = company.concrete_plant_silos_count || "Nėra duomenų";
   const plantName = company.concrete_plant_name || "Reikia papildyti";
   const description = company.concrete_plant_description || "Nėra viešo aprašymo";
   return `
@@ -90,6 +91,7 @@ function popupHtml(company) {
         <dt>Adresas</dt><dd>${escapeHtml(company.address)}</dd>
         <dt>Mazgas</dt><dd>${escapeHtml(plantName)}</dd>
         <dt>Našumas</dt><dd>${escapeHtml(capacity)}</dd>
+        <dt>Silosai</dt><dd>${escapeHtml(silosCount)}</dd>
         <dt>Aprašymas</dt><dd>${escapeHtml(description)}</dd>
         <dt>Apyvarta</dt><dd>${escapeHtml(revenue)}</dd>
         <dt>Darbuotojai</dt><dd>${escapeHtml(employees)}</dd>
@@ -124,13 +126,14 @@ function filteredCompanies() {
   return companies.filter((company) => {
     const cityOk = selectedCity === "all" || company.city === selectedCity;
     const activityOk = selectedActivity === "all" || company.activity_label === selectedActivity;
-    const needsManual = !company.concrete_plant_name || !company.concrete_plant_capacity || !company.revenue_latest || !company.employees_latest || !company.vehicles_latest;
+    const needsManual = !company.concrete_plant_name || !company.concrete_plant_capacity || !company.concrete_plant_silos_count || !company.revenue_latest || !company.employees_latest || !company.vehicles_latest;
     const completenessOk =
       selectedCompleteness === "all" ||
       (selectedCompleteness === "needs_manual" && needsManual) ||
       (selectedCompleteness === "has_plant_name" && Boolean(company.concrete_plant_name)) ||
-      (selectedCompleteness === "has_capacity" && Boolean(company.concrete_plant_capacity));
-    const text = `${company.name} ${company.brand} ${company.address} ${company.city} ${company.concrete_plant_name}`.toLowerCase();
+      (selectedCompleteness === "has_capacity" && Boolean(company.concrete_plant_capacity)) ||
+      (selectedCompleteness === "has_silos_count" && Boolean(company.concrete_plant_silos_count));
+    const text = `${company.name} ${company.brand} ${company.address} ${company.city} ${company.concrete_plant_name} ${company.concrete_plant_capacity} ${company.concrete_plant_silos_count}`.toLowerCase();
     const searchOk = !query || text.includes(query);
     return cityOk && activityOk && completenessOk && searchOk;
   });
@@ -151,6 +154,7 @@ function renderList(items) {
       <strong>${escapeHtml(company.brand || company.name)}</strong>
       <span>${escapeHtml(company.city)} - ${escapeHtml(company.address)}</span>
       <span>${escapeHtml(company.concrete_plant_name || "Mazgo pavadinimą reikia papildyti")}</span>
+      <span>Našumas: ${escapeHtml(company.concrete_plant_capacity || "nėra duomenų")} · Silosai: ${escapeHtml(company.concrete_plant_silos_count || "nėra duomenų")}</span>
       <span class="activity-pill">${escapeHtml(company.activity_label)}</span>
     `;
     button.addEventListener("click", () => {
