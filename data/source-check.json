@@ -1,16 +1,16 @@
 {
-  "checked_at": "2026-06-30T12:13:09.835640+00:00",
+  "checked_at": "2026-06-30T19:39:16.268453+00:00",
   "rows": 59,
   "scope": "Visa Lietuva",
   "issues": [],
   "sources": [
     {
-      "url": "https://autokausta.lt/",
+      "url": "https://alytausgelzbetonis.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
     {
-      "url": "https://betonobaze.lt/",
+      "url": "https://betonastaurageje.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
@@ -30,6 +30,11 @@
       "status": 200
     },
     {
+      "url": "https://ekobetonas.lt/kontaktai-betono-gamyba-armaturinis-plienas/",
+      "ok": true,
+      "status": 200
+    },
+    {
       "url": "https://gelmesta.lt/",
       "ok": true,
       "status": 200
@@ -40,7 +45,12 @@
       "status": 200
     },
     {
-      "url": "https://gernora.lt/",
+      "url": "https://gernora.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://gkg3.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
@@ -56,8 +66,8 @@
     },
     {
       "url": "https://inroma.lt/",
-      "ok": false,
-      "error": "<urlopen error [WinError 10054] An existing connection was forcibly closed by the remote host>"
+      "ok": true,
+      "status": 200
     },
     {
       "url": "https://pamariogrupe.lt/",
@@ -66,6 +76,11 @@
     },
     {
       "url": "https://pamatas.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://santvara.eu/",
       "ok": true,
       "status": 200
     },
@@ -80,32 +95,12 @@
       "status": 200
     },
     {
-      "url": "https://spsc.lt/registrai/regsapp/ser_produktai_view.php?editid1=13020",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://statkasta.lt/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://topbeton.lt/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://transdosa.lt/",
+      "url": "https://statkasta.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
     {
       "url": "https://ukmergesgelzbetonis.lt/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://utenosbetonas.lt/",
       "ok": true,
       "status": 200
     },
@@ -130,22 +125,32 @@
       "status": 200
     },
     {
-      "url": "https://www.gelzbetonineskonstrukcijos.lt/",
+      "url": "https://www.autokausta.lt/apie-mus/betonas/",
       "ok": true,
       "status": 200
     },
     {
-      "url": "https://www.gkg3.lt/",
+      "url": "https://www.betonas.heidelbergmaterials.lt/lt/kontaktine-informacija-0",
       "ok": true,
       "status": 200
     },
     {
-      "url": "https://www.heidelbergmaterials.lt/",
+      "url": "https://www.betoneura.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
     {
-      "url": "https://www.kaunogelzbetonis.lt/",
+      "url": "https://www.betonobaze.lt/kontaktai",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.gelzbetonineskonstrukcijos.lt/contacts/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.kaunogelzbetonis.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
@@ -176,6 +181,21 @@
     },
     {
       "url": "https://www.tkeliai.lt/kitos-paslaugos/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.topbeton.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.transdosa.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.utenosbetonas.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
