@@ -24,6 +24,9 @@ HEADERS = [
     ("address", "Adresas"),
     ("latitude", "Platuma"),
     ("longitude", "Ilguma"),
+    ("coordinate_quality", "Koordinačių tikslumas"),
+    ("coordinate_source_name", "Koordinačių šaltinis"),
+    ("coordinate_source_url", "Koordinačių šaltinio URL"),
     ("activity_type", "Veiklos tipas"),
     ("activity_label", "Veikla"),
     ("concrete_plant_name", "Betono mazgo / gamyklos pavadinimas"),
@@ -120,10 +123,10 @@ def write_workbook(companies: list[dict]) -> None:
     for row in ws.iter_rows(min_row=2, min_col=9, max_col=10):
         for cell in row:
             cell.number_format = "0.000000"
-    for row in ws.iter_rows(min_row=2, min_col=16, max_col=16):
+    for row in ws.iter_rows(min_row=2, min_col=19, max_col=19):
         for cell in row:
             cell.number_format = "0.00"
-    for row in ws.iter_rows(min_row=2, min_col=17, max_col=20):
+    for row in ws.iter_rows(min_row=2, min_col=20, max_col=23):
         for cell in row:
             cell.number_format = "#,##0"
 

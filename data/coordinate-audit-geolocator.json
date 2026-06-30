@@ -1,0 +1,582 @@
+[
+  {
+    "company_id": "betono-centras-vilnius",
+    "query": "Naujoji Riovonių g. 11, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.6560815,
+    "lon": 25.2314767,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Naujoji Riovonių g. 11, 03153, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-centras-kaunas",
+    "query": "Raudondvario pl. 157, Kaunas, Kauno m. sav., Lietuva",
+    "lat": 54.9128359,
+    "lon": 23.8412662,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Raudondvario pl. 157, 47171, Kaunas, Kauno m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-centras-klaipeda",
+    "query": "Liepų g. 87N, Klaipėda, Klaipėdos m. sav., Lietuva",
+    "lat": 55.7290357,
+    "lon": 21.1544709,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Liepų g. 87N, 92195, Klaipėda, Klaipėdos m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-centras-siauliai",
+    "query": "Daubos g. 7A, Šiauliai, Šiaulių m. sav., Lietuva",
+    "lat": 55.9056327,
+    "lon": 23.3141873,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Daubos g. 7A, 78150, Šiauliai, Šiaulių m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-centras-mazeikiai",
+    "query": "Troškučių g. 1, Mažeikiai, Mažeikių r. sav., Lietuva",
+    "lat": 56.3189055,
+    "lon": 22.2967774,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Troškučių g. 1, 89101, Mažeikiai, Mažeikių sen., Mažeikių r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-centras-panevezys",
+    "query": "S. Kerbedžio g. 52A, Panevėžys, Panevėžio m. sav., Lietuva",
+    "lat": 55.7423854,
+    "lon": 24.3777723,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "S. Kerbedžio g. 52A, 35113, Panevėžys, Panevėžio m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "heidelberg-vilnius-siaures",
+    "query": "Šiaurės g. 2, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.6921358,
+    "lon": 25.3937728,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Šiaurės g. 2, 11101, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "heidelberg-vilnius-sandeliu",
+    "query": "Sandėlių g. 16, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.6535114,
+    "lon": 25.1242965,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Sandėlių g. 16, 02248, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "heidelberg-kaunas",
+    "query": "Technikos g. 7K, Kaunas, Kauno m. sav., Lietuva",
+    "lat": 54.9093181,
+    "lon": 24.0122104,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Technikos g. 7K, 51209, Kaunas, Kauno m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "heidelberg-klaipeda",
+    "query": "Švepelių g. 5, Klaipėda, Klaipėdos m. sav., Lietuva",
+    "lat": 55.6744503,
+    "lon": 21.2165993,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Švepelių g. 5, 94103, Klaipėda, Klaipėdos m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "heidelberg-alytus",
+    "query": "Kalniškės g. 2, Alytus, Alytaus m. sav., Lietuva",
+    "lat": 54.4113266,
+    "lon": 24.0081029,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Kalniškės g. 2, 62175, Alytus, Alytaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "heidelberg-pasvalys",
+    "query": "Beržų g. 8C, Pasvalys, Pasvalio r. sav., Lietuva",
+    "lat": 56.0647646,
+    "lon": 24.3860079,
+    "score": 98.0,
+    "type": "StreetName",
+    "match": "Beržų g., Pasvalys, Pasvalio miesto sen., Pasvalio r. sav.",
+    "quality": "Gatvės lygio taškas; reikia tikslesnio adreso taško"
+  },
+  {
+    "company_id": "palmusta-vilnius",
+    "query": "Sudervės kel. 1A, Avižieniai, Vilniaus r., Vilniaus r. sav., Lietuva",
+    "lat": 54.7136351,
+    "lon": 25.2359209,
+    "score": 97.06,
+    "type": "PointAddress",
+    "match": "Sudervės kel. 1A, 07195, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "gkg3-vilnius",
+    "query": "Šaltupio g. 11, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.6482969,
+    "lon": 25.1958961,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Šaltupio g. 11, 02300, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "perdanga-vilnius",
+    "query": "Lentvario g. 16, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.642372,
+    "lon": 25.1441455,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Lentvario g. 16, 02300, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "perdanga-klaipeda",
+    "query": "Dubysos g. 27, Klaipėda, Klaipėdos m. sav., Lietuva",
+    "lat": 55.6923067,
+    "lon": 21.1631559,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Dubysos g. 27, 91181, Klaipėda, Klaipėdos m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "kauno-gelzbetonis-kaunas",
+    "query": "Pramonės pr. 8, Kaunas, Kauno m. sav., Lietuva",
+    "lat": 54.9122829,
+    "lon": 23.9864942,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Pramonės pr. 8, 51223, Kaunas, Kauno m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "ukmerges-gelzbetonis-ukmerge",
+    "query": "Antakalnio g. 60, Ukmergė, Ukmergės r. sav., Lietuva",
+    "lat": 55.2419448,
+    "lon": 24.7875927,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Antakalnio g. 60, 20144, Ukmergė, Ukmergės miesto sen., Ukmergės r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "gelzbetonines-konstrukcijos-siauliai",
+    "query": "Sodo g. 20A, Šiauliai, Šiaulių m. sav., Lietuva",
+    "lat": 55.9494778,
+    "lon": 23.3103706,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Sodo g. 20A, 76178, Šiauliai, Šiaulių m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "inhus-senieji-trakai",
+    "query": "Plačioji g. 27, Senieji Trakai, Trakų r. sav., Lietuva",
+    "lat": 54.6140174,
+    "lon": 24.980818,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Plačioji g. 27, 21146, Senieji Trakai, Senųjų Trakų sen., Trakų r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "gelmesta-vievis",
+    "query": "Statybininkų g. 1B, Vievis, Elektrėnų sav., Lietuva",
+    "lat": 54.7782794,
+    "lon": 24.8280365,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Statybininkų g. 1B, 21389, Vievis, Vievio sen., Elektrėnų sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "suduvos-betonas-marijampole",
+    "query": "Sporto g. 9H, Marijampolė, Marijampolės sav., Lietuva",
+    "lat": 54.5702553,
+    "lon": 23.3803405,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Sporto g. 9H, 68108, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "statkasta-kaunas",
+    "query": "Marvelės g. 199B, Kaunas, Kauno m. sav., Lietuva",
+    "lat": 54.9007881,
+    "lon": 23.8489377,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Marvelės g. 199B, 46204, Kaunas, Kauno m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "autokausta-kaunas",
+    "query": "Marvelės g. 199B, Kaunas, Kauno m. sav., Lietuva",
+    "lat": 54.9007881,
+    "lon": 23.8489377,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Marvelės g. 199B, 46204, Kaunas, Kauno m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-baze-visaginas",
+    "query": "Elektrinės g. 11, Drūkšinių k., Visagino sav., Visagino sav., Lietuva",
+    "lat": 55.5963685,
+    "lon": 26.5817201,
+    "score": 98.85,
+    "type": "PointAddress",
+    "match": "Elektrinės g. 11, 31152, Drūkšinių k., Visagino sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "transdosa-druskininkai",
+    "query": "Žvyro g. 2A, Margų k., Druskininkų sav., Druskininkų sav., Lietuva",
+    "lat": 54.146785,
+    "lon": 23.9291769,
+    "score": 98.57,
+    "type": "PointAddress",
+    "match": "Žvyro g. 2A, 67266, Margų k., Leipalingio sen., Druskininkų sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "sodbeta-siauliai",
+    "query": "Sodo g. 20, Šiauliai, Šiaulių m. sav., Lietuva",
+    "lat": 55.949032,
+    "lon": 23.3125879,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Sodo g. 20, 76178, Šiauliai, Šiaulių m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "alytaus-gelzbetonis-alytus",
+    "query": "Pramonės g. 15, Alytus, Alytaus m. sav., Lietuva",
+    "lat": 54.4260262,
+    "lon": 24.014948,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Pramonės g. 15, 62175, Alytus, Alytaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "gernora-marijampole",
+    "query": "Vingio g. 2M, Marijampolė, Marijampolės sav., Lietuva",
+    "lat": 54.5358398,
+    "lon": 23.3344441,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Vingio g. 2M, 68311, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "re-betono-konstrukcijos-kretinga",
+    "query": "Tiekėjų g. 27B, Kretinga, Kretingos r. sav., Lietuva",
+    "lat": 55.87963,
+    "lon": 21.220888,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Tiekėjų g. 27B, 97187, Kretinga, Kretingos miesto sen., Kretingos r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "silales-statyba-vingininkai",
+    "query": "Lauryno Ivinskio g. 7, Vingininkai, Šilalės r., Šilalės r. sav., Lietuva",
+    "lat": 55.4808479,
+    "lon": 22.1937399,
+    "score": 98.52,
+    "type": "PointAddress",
+    "match": "Lauryno Ivinskio g. 7, 75113, Vingininkai, Šilalės kaimiškoji sen., Šilalės r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "panevezio-gelzbetonis-panevezys",
+    "query": "S. Kerbedžio g. 52, Panevėžys, Panevėžio m. sav., Lietuva",
+    "lat": 55.7409491,
+    "lon": 24.3803541,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "S. Kerbedžio g. 52, 35113, Panevėžys, Panevėžio m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "pamatas-telsiai",
+    "query": "Tryškių g. 46, Dimaičių k., Telšių r., Telšių r. sav., Lietuva",
+    "lat": 55.9874536,
+    "lon": 22.287162,
+    "score": 98.37,
+    "type": "PointAddress",
+    "match": "Tryškių g. 46, 88102, Dimaičių k., Degaičių sen., Telšių r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "vilniaus-betono-gaminiai-vilnius",
+    "query": "A. Jakšto g. 5, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.6888177,
+    "lon": 25.2756813,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "A. Jakšto g. 5, 01105, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "pamario-grupe-kalnuvenai",
+    "query": "Kaukėnų g. 12, Kalnuvėnai, Klaipėdos r., Klaipėdos r. sav., Lietuva",
+    "lat": 55.7905468,
+    "lon": 21.1471136,
+    "score": 98.4,
+    "type": "PointAddress",
+    "match": "Kaukėnų g. 12, 92321, Kalnuvėnai, Sendvario sen., Klaipėdos r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-zona-klaipeda",
+    "query": "Dvaro g. 6, Klaipėda, Klaipėdos m. sav., Lietuva",
+    "lat": 55.7549809,
+    "lon": 21.150509,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Dvaro g. 6, 92347, Klaipėda, Klaipėdos m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "topbeton-panevezys",
+    "query": "Beržų g. 5C, Panevėžys, Panevėžio m. sav., Lietuva",
+    "lat": 55.7168572,
+    "lon": 24.3617863,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Beržų g. 5C, 36237, Panevėžys, Panevėžio m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "gelzbetonio-gamyba-panevezys",
+    "query": "S. Kerbedžio g. 52, Panevėžys, Panevėžio m. sav., Lietuva",
+    "lat": 55.7409491,
+    "lon": 24.3803541,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "S. Kerbedžio g. 52, 35113, Panevėžys, Panevėžio m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "inroma-pakruojis",
+    "query": "Pramonės g. 5B, Pakruojis, Pakruojo r. sav., Lietuva",
+    "lat": 55.9763263,
+    "lon": 23.8584712,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Pramonės g. 5B, 83182, Pakruojis, Pakruojo sen., Pakruojo r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "seldra-vilnius",
+    "query": "O. Miciūtės g. 7, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.7424422,
+    "lon": 25.2535408,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Onos Miciūtės g. 7, 08442, Vilnius, Vilniaus m. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "utenos-betonas-utena",
+    "query": "Metalo g. 9B, Utena, Utenos r. sav., Lietuva",
+    "lat": 55.4947607,
+    "lon": 25.6225075,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Metalo g. 9B, 28217, Utena, Utenos miesto sen., Utenos r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "sbetonas-jonava",
+    "query": "Skarulių g. 58, Jonava, Jonavos r. sav., Lietuva",
+    "lat": 55.0786452,
+    "lon": 24.3199072,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Skarulių g. 58, 55198, Jonava, Jonavos sen., Jonavos r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "kalcitas-naujoji-akmene",
+    "query": "J. Dalinkevičiaus g. 2, Naujoji Akmenė, Akmenės r. sav., Lietuva",
+    "lat": 56.3143832,
+    "lon": 22.9130704,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "J. Dalinkevičiaus g. 2, 85118, Naujoji Akmenė, Naujosios Akmenės miesto sen., Akmenės r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "gelgaudiskio-gelzbetonis-gelgaudiskis",
+    "query": "Nemuno g. 1, Gelgaudiškis, Šakių r. sav., Lietuva",
+    "lat": 55.0823469,
+    "lon": 22.9903537,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Nemuno g. 1, 71422, Gelgaudiškis, Gelgaudiškio sen., Šakių r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "sausta-trakai",
+    "query": "Karaimų g. 73, Trakai, Trakų r. sav., Lietuva",
+    "lat": 54.6523614,
+    "lon": 24.9221724,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Karaimų g. 73, 21104, Trakai, Trakų sen., Trakų r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "ginfa-kutiskiai",
+    "query": "Alyvų g. 8, Kutiškiai, Radviliškio r., Radviliškio r. sav., Lietuva",
+    "lat": 55.8326273,
+    "lon": 23.4995317,
+    "score": 95.84,
+    "type": "PointAddress",
+    "match": "Alyvų g. 8, 82100, Kutiškiai, Radviliškio sen., Radviliškio r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "antano-gribino-imone-prienai",
+    "query": "Kęstučio g. 95A, Prienai, Prienų r. sav., Lietuva",
+    "lat": 54.6523184,
+    "lon": 23.9696591,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Kęstučio g. 95A, 59142, Prienai, Prienų sen., Prienų r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "kelsera-anavilis",
+    "query": "Bitininkų g. 13, Anavilis, Vilniaus r., Vilniaus r. sav., Lietuva",
+    "lat": 54.9463928,
+    "lon": 25.216796,
+    "score": 98.33,
+    "type": "PointAddress",
+    "match": "Bitininkų g. 13, 14271, Anavilis, Paberžės sen., Vilniaus r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "altimas-avizieniai",
+    "query": "Vaikystės g. 10, Avižieniai, Vilniaus r., Vilniaus r. sav., Lietuva",
+    "lat": 54.7579388,
+    "lon": 25.1878461,
+    "score": 98.4,
+    "type": "PointAddress",
+    "match": "Vaikystės g. 10, 14184, Avižieniai, Avižienių sen., Vilniaus r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "vinido-taurage",
+    "query": "Gaurės g. 32, Tauragė, Tauragės r. sav., Lietuva",
+    "lat": 55.2492204,
+    "lon": 22.3185845,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Gaurės g. 32, 72343, Tauragė, Tauragės miesto sen., Tauragės r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "santvara-kedainiai",
+    "query": "Aruodų g. 34, Kėdainiai, Kėdainių r. sav., Lietuva",
+    "lat": 55.2634747,
+    "lon": 23.9440384,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Aruodų g. 34, 57347, Kėdainiai, Kėdainių miesto sen., Kėdainių r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "eurobetonas-visaginas",
+    "query": "Sandėlių g. 1, Karlų k., Visagino sav., Visagino sav., Lietuva",
+    "lat": 55.5732062,
+    "lon": 26.4787145,
+    "score": 98.67,
+    "type": "PointAddress",
+    "match": "Sandėlių g. 1, 31147, Karlų k., Visagino sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "medis-ir-betonas-naujoji-akmene",
+    "query": "J. Dalinkevičiaus g. 2, Naujoji Akmenė, Akmenės r. sav., Lietuva",
+    "lat": 56.3143832,
+    "lon": 22.9130704,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "J. Dalinkevičiaus g. 2, 85118, Naujoji Akmenė, Naujosios Akmenės miesto sen., Akmenės r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "ekobetonas-marijampole",
+    "query": "Gamyklų g. 3, Marijampolė, Marijampolės sav., Lietuva",
+    "lat": 54.5750142,
+    "lon": 23.3796805,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Gamyklų g. 3, 68108, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "rokbetonis-rokiskis",
+    "query": "Vydūno g. 12A, Parokiškė, Rokiškio r., Rokiškio r. sav., Lietuva",
+    "lat": 55.9525796,
+    "lon": 25.5624197,
+    "score": 98.09,
+    "type": "PointAddress",
+    "match": "Vydūno g. 12A, 42170, Parokiškė, Rokiškio kaimiškoji sen., Rokiškio r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "beton-eura-dovainonys",
+    "query": "Žilvičių g. 2, Dovainonys, Kaišiadorių r., Kaišiadorių r. sav., Lietuva",
+    "lat": 54.8395918,
+    "lon": 24.2360193,
+    "score": 97.78,
+    "type": "PointAddress",
+    "match": "Žilvičių g. 2, 56341, Dovainonys, Rumšiškių sen., Kaišiadorių r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "silutes-betonas-silute",
+    "query": "Ramučių g. 1, Šilutė, Šilutės r. sav., Lietuva",
+    "lat": 55.3538641,
+    "lon": 21.4796635,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Ramučių g. 1, 99151, Šilutė, Šilutės sen., Šilutės r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "kruszbet-lithuania-jure",
+    "query": "Medelyno g. 30A, Jūrė, Kazlų Rūdos sav., Kazlų Rūdos sav., Lietuva",
+    "lat": 54.7706307,
+    "lon": 23.4998409,
+    "score": 98.57,
+    "type": "PointAddress",
+    "match": "Medelyno g. 30A, 69447, Jūrė, Kazlų Rūdos sen., Kazlų Rūdos sav.",
+    "quality": "Tikslus adreso taškas"
+  }
+]

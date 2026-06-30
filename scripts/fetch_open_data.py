@@ -49,6 +49,10 @@ def validate_rows(rows: list[dict]) -> list[dict]:
             issues.append({"company_id": company_id, "issue": "contains_excluded_keyword"})
         if row.get("latitude") is None or row.get("longitude") is None:
             issues.append({"company_id": company_id, "issue": "missing_coordinates"})
+        if not row.get("coordinate_quality"):
+            issues.append({"company_id": company_id, "issue": "missing_coordinate_quality"})
+        if not row.get("coordinate_source_name") or not row.get("coordinate_source_url"):
+            issues.append({"company_id": company_id, "issue": "missing_coordinate_source"})
     return issues
 
 
