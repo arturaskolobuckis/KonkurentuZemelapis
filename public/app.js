@@ -15,6 +15,15 @@ L.tileLayer(
 ).addTo(map);
 
 L.tileLayer(
+  "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
+  {
+    maxZoom: 19,
+    attribution: "Road labels &copy; Esri",
+    pane: "overlayPane"
+  }
+).addTo(map);
+
+L.tileLayer(
   "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
   {
     maxZoom: 19,
