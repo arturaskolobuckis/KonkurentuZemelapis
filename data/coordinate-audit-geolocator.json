@@ -131,13 +131,13 @@
   },
   {
     "company_id": "gkg3-vilnius",
-    "query": "Šaltupio g. 11, Vilnius, Vilniaus m. sav., Lietuva",
-    "lat": 54.6482969,
-    "lon": 25.1958961,
+    "query": "Šaltupio g. 11, LT-02300, Vilnius",
+    "lat": 54.6471731,
+    "lon": 25.1918488,
     "score": 100.0,
-    "type": "PointAddress",
-    "match": "Šaltupio g. 11, 02300, Vilnius, Vilniaus m. sav.",
-    "quality": "Tikslus adreso taškas"
+    "type": "OfficialMapPoint",
+    "match": "Šaltupio g. 11, LT-02300, Vilnius",
+    "quality": "Oficialios Google Maps nuorodos taškas"
   },
   {
     "company_id": "perdanga-vilnius",
@@ -181,13 +181,13 @@
   },
   {
     "company_id": "gelzbetonines-konstrukcijos-siauliai",
-    "query": "Sodo g. 20A, Šiauliai, Šiaulių m. sav., Lietuva",
-    "lat": 55.9494778,
-    "lon": 23.3103706,
+    "query": "Sodo g. 20A, LT-76178, Šiauliai",
+    "lat": 55.9495824,
+    "lon": 23.3105291,
     "score": 100.0,
-    "type": "PointAddress",
-    "match": "Sodo g. 20A, 76178, Šiauliai, Šiaulių m. sav.",
-    "quality": "Tikslus adreso taškas"
+    "type": "OfficialMapPoint",
+    "match": "Sodo g. 20A, LT-76178, Šiauliai",
+    "quality": "Oficialios žemėlapio nuorodos taškas"
   },
   {
     "company_id": "inhus-senieji-trakai",
@@ -221,13 +221,13 @@
   },
   {
     "company_id": "statkasta-kaunas",
-    "query": "Marvelės g. 199B, Kaunas, Kauno m. sav., Lietuva",
-    "lat": 54.9007881,
-    "lon": 23.8489377,
-    "score": 100.0,
-    "type": "PointAddress",
-    "match": "Marvelės g. 199B, 46204, Kaunas, Kauno m. sav.",
-    "quality": "Tikslus adreso taškas"
+    "query": "Gėlių g. 34, Serdokų k., Vilkaviškio r., LT-70201",
+    "lat": 54.6279368,
+    "lon": 23.0871345,
+    "score": 82.76,
+    "type": "Locality",
+    "match": "Serdokų k., Šeimenos seniūnija, Vilkaviškio r. sav.",
+    "quality": "Vietovės lygio taškas; reikia tikslesnio adreso taško"
   },
   {
     "company_id": "autokausta-kaunas",
@@ -271,23 +271,23 @@
   },
   {
     "company_id": "alytaus-gelzbetonis-alytus",
-    "query": "Pramonės g. 15, Alytus, Alytaus m. sav., Lietuva",
-    "lat": 54.4260262,
-    "lon": 24.014948,
+    "query": "Pramonės g. 15, LT-62175, Alytus",
+    "lat": 54.426129,
+    "lon": 24.016482,
     "score": 100.0,
-    "type": "PointAddress",
-    "match": "Pramonės g. 15, 62175, Alytus, Alytaus m. sav.",
-    "quality": "Tikslus adreso taškas"
+    "type": "OfficialMapPoint",
+    "match": "Pramonės g. 15, LT-62175, Alytus",
+    "quality": "Oficialaus kontaktų puslapio žemėlapio taškas"
   },
   {
     "company_id": "gernora-marijampole",
-    "query": "Vingio g. 2M, Marijampolė, Marijampolės sav., Lietuva",
-    "lat": 54.5358398,
-    "lon": 23.3344441,
+    "query": "Vingio g. 2M, LT-68131 Marijampolė",
+    "lat": 54.5356806,
+    "lon": 23.3349754,
     "score": 100.0,
-    "type": "PointAddress",
-    "match": "Vingio g. 2M, 68311, Marijampolė, Marijampolės miesto sen., Marijampolės sav.",
-    "quality": "Tikslus adreso taškas"
+    "type": "OfficialMapPoint",
+    "match": "Vingio g. 2M, LT-68131 Marijampolė",
+    "quality": "Oficialios Google Maps nuorodos taškas"
   },
   {
     "company_id": "re-betono-konstrukcijos-kretinga",
