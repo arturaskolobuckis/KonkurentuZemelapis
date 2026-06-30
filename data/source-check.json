@@ -1,14 +1,9 @@
 {
-  "checked_at": "2026-06-30T04:22:25.145314+00:00",
-  "rows": 45,
+  "checked_at": "2026-06-30T11:26:52.600548+00:00",
+  "rows": 58,
   "scope": "Visa Lietuva",
   "issues": [],
   "sources": [
-    {
-      "url": "https://alytausgelzbetonis.lt/kontaktai/",
-      "ok": true,
-      "status": 200
-    },
     {
       "url": "https://autokausta.lt/",
       "ok": true,
@@ -26,6 +21,11 @@
     },
     {
       "url": "https://betonozona.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://data.gov.lt/dataset/juridiniu-asmenu-ekonomines-veiklos-rusys-ir-instituciniai-sektoriai/",
       "ok": true,
       "status": 200
     },
