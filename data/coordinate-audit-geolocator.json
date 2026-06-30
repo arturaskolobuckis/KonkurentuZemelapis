@@ -431,12 +431,12 @@
   },
   {
     "company_id": "gelgaudiskio-gelzbetonis-gelgaudiskis",
-    "query": "Nemuno g. 1, Gelgaudiškis, Šakių r. sav., Lietuva",
-    "lat": 55.0823469,
-    "lon": 22.9903537,
+    "query": "Vakarų g. 33 D, 71431, Gelgaudiškis, Lietuva",
+    "lat": 55.07067,
+    "lon": 22.976723,
     "score": 100.0,
     "type": "PointAddress",
-    "match": "Nemuno g. 1, 71422, Gelgaudiškis, Gelgaudiškio sen., Šakių r. sav.",
+    "match": "Vakarų g. 33 D, 71431, Gelgaudiškis",
     "quality": "Tikslus adreso taškas"
   },
   {
