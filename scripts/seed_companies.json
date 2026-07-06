@@ -12,8 +12,8 @@
     "longitude": 25.2314767,
     "activity_type": "ready_mix_concrete",
     "activity_label": "Betono mišiniai",
-    "concrete_plant_name": "Vilniaus betono mazgas",
-    "concrete_plant_capacity": "",
+    "concrete_plant_name": "Stetter",
+    "concrete_plant_capacity": "100 m³/val.",
     "concrete_plant_description": "Viešai skelbiamas Betono centro betono mazgas Vilniuje.",
     "classification_confidence": 0.9,
     "revenue_latest": null,
@@ -27,13 +27,14 @@
     "vehicles_source_url": "",
     "plant_source_url": "https://betonocentras.lt/kontaktai/",
     "manual_note": "",
-    "last_updated": "2026-06-29",
+    "last_updated": "2026-07-06",
     "coordinate_source_name": "Lietuvos geolokatorius",
     "coordinate_source_url": "https://hub.arcgis.com/content/b9e27b4266524b39bc651d6a26480b87",
     "coordinate_match_address": "Naujoji Riovonių g. 11, 03153, Vilnius, Vilniaus m. sav.",
     "coordinate_match_score": 100.0,
     "coordinate_match_type": "PointAddress",
-    "coordinate_quality": "Tikslus adreso taškas"
+    "coordinate_quality": "Tikslus adreso taškas",
+    "concrete_plant_mixer": "2x3,35 m³"
   },
   {
     "company_id": "betono-centras-kaunas",
