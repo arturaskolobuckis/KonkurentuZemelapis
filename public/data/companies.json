@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-06T16:45:44.678986+00:00",
+  "generated_at": "2026-07-06T17:22:34.127039+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -43,6 +43,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -80,6 +81,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -117,6 +119,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -154,6 +157,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -191,6 +195,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -228,6 +233,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -265,6 +271,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -302,6 +309,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -339,6 +347,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -376,6 +385,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -413,6 +423,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -450,6 +461,7 @@
       "coordinate_match_score": 98.0,
       "coordinate_match_type": "StreetName",
       "coordinate_quality": "Gatvės lygio taškas; reikia tikslesnio adreso taško",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -487,6 +499,7 @@
       "coordinate_match_score": 97.06,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -524,6 +537,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "OfficialMapPoint",
       "coordinate_quality": "Oficialios Google Maps nuorodos taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -561,6 +575,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -598,6 +613,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -635,6 +651,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -672,6 +689,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -709,6 +727,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "OfficialMapPoint",
       "coordinate_quality": "Oficialios žemėlapio nuorodos taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -746,6 +765,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -783,6 +803,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -820,6 +841,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -836,8 +858,9 @@
       "activity_type": "ready_mix_concrete",
       "activity_label": "Betono mišiniai",
       "concrete_plant_name": "Statkasta betono mazgas",
-      "concrete_plant_capacity": "",
-      "concrete_plant_description": "Viešai skelbiamas betono mišinių tiekėjas.",
+      "concrete_plant_mixer": "Ammann Elba CBT60SL, 1 m³",
+      "concrete_plant_capacity": "iki 60 m³/h",
+      "concrete_plant_description": "Betono mazgo gamintojas Ammann Elba; modelis CBT60SL; maišyklė 1 m³; našumas iki 60 m³/h.",
       "classification_confidence": 0.75,
       "revenue_latest": null,
       "revenue_year": null,
@@ -849,8 +872,8 @@
       "employees_source_url": "",
       "vehicles_source_url": "",
       "plant_source_url": "https://statkasta.lt/kontaktai/",
-      "manual_note": "Oficialiame Statkasta kontaktų puslapyje nurodytas adresas Gėlių g. 34, Serdokų k.; koordinatės geokoduotos iki vietovės lygio.",
-      "last_updated": "2026-06-29",
+      "manual_note": "Oficialiame Statkasta kontaktų puslapyje nurodytas adresas Gėlių g. 34, Serdokų k.; koordinatės geokoduotos iki vietovės lygio. Rankiniu būdu papildyta techninė informacija: gamintojas Ammann Elba, modelis CBT60SL, maišyklė 1 m³, našumas iki 60 m³/h.",
+      "last_updated": "2026-07-06",
       "coordinate_source_name": "ArcGIS geokodavimas pagal oficialų Statkasta adresą",
       "coordinate_source_url": "https://statkasta.lt/kontaktai/",
       "coordinate_match_address": "Serdokų k., Šeimenos seniūnija, Vilkaviškio r. sav.",
@@ -894,6 +917,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -931,6 +955,7 @@
       "coordinate_match_score": 98.85,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -968,6 +993,7 @@
       "coordinate_match_score": 98.57,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1005,6 +1031,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1042,6 +1069,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "OfficialMapPoint",
       "coordinate_quality": "Oficialaus kontaktų puslapio žemėlapio taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1079,6 +1107,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "OfficialMapPoint",
       "coordinate_quality": "Oficialios Google Maps nuorodos taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1116,6 +1145,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1153,6 +1183,7 @@
       "coordinate_match_score": 98.52,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1190,6 +1221,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1227,6 +1259,7 @@
       "coordinate_match_score": 98.37,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1264,6 +1297,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1301,6 +1335,7 @@
       "coordinate_match_score": 98.4,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1338,6 +1373,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1375,6 +1411,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1412,6 +1449,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1449,6 +1487,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1486,6 +1525,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1523,6 +1563,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1560,6 +1601,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1597,6 +1639,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1634,6 +1677,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1671,6 +1715,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1708,6 +1753,7 @@
       "coordinate_match_score": 95.84,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1745,6 +1791,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1782,6 +1829,7 @@
       "coordinate_match_score": 98.33,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1819,6 +1867,7 @@
       "coordinate_match_score": 98.4,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1856,6 +1905,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1893,6 +1943,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1930,6 +1981,7 @@
       "coordinate_match_score": 98.67,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -1967,6 +2019,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -2004,6 +2057,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -2041,6 +2095,7 @@
       "coordinate_match_score": 98.09,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -2078,6 +2133,7 @@
       "coordinate_match_score": 97.78,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -2115,6 +2171,7 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -2152,6 +2209,7 @@
       "coordinate_match_score": 98.57,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
+      "concrete_plant_mixer": "",
       "concrete_plant_silos_count": ""
     },
     {
@@ -2167,9 +2225,11 @@
       "longitude": 22.2581129,
       "activity_type": "ready_mix_concrete",
       "activity_label": "Betono mišiniai",
-      "concrete_plant_name": "Telšių kelių betono mišinių gamyba",
+      "concrete_plant_name": "Elkon",
+      "concrete_plant_mixer": "",
       "concrete_plant_capacity": "",
-      "concrete_plant_description": "Oficialiame įmonės puslapyje skelbiama betono mišinių gamyba ir prekyba.",
+      "concrete_plant_silos_count": 2,
+      "concrete_plant_description": "Oficialiame įmonės puslapyje skelbiama betono mišinių gamyba ir prekyba. Naudotojo duomenimis, betono mazgas vadinasi Elkon, yra 2 silosai.",
       "classification_confidence": 0.86,
       "revenue_latest": null,
       "revenue_year": null,
@@ -2181,15 +2241,14 @@
       "employees_source_url": "",
       "vehicles_source_url": "",
       "plant_source_url": "https://www.tkeliai.lt/kitos-paslaugos/",
-      "manual_note": "Įtraukta pagal naudotojo informaciją; veikla patvirtinta oficialiame lietuviškame įmonės puslapyje. Koordinatės nustatytos Lietuvos geolokatoriumi pagal Mažeikių g. 18 adresą.",
-      "last_updated": "2026-06-30",
+      "manual_note": "Įtraukta pagal naudotojo informaciją; veikla patvirtinta oficialiame lietuviškame įmonės puslapyje. Naudotojo duomenimis, betono mazgas vadinasi Elkon, yra 2 silosai. Koordinatės nustatytos Lietuvos geolokatoriumi pagal Mažeikių g. 18 adresą.",
+      "last_updated": "2026-07-06",
       "coordinate_source_name": "Lietuvos geolokatorius",
       "coordinate_source_url": "https://hub.arcgis.com/content/b9e27b4266524b39bc651d6a26480b87",
       "coordinate_match_address": "Mažeikių g. 18, 87101, Telšiai, Telšių miesto sen., Telšių r. sav.",
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "PointAddress",
-      "coordinate_quality": "Tikslus adreso taškas",
-      "concrete_plant_silos_count": ""
+      "coordinate_quality": "Tikslus adreso taškas"
     }
   ]
 }

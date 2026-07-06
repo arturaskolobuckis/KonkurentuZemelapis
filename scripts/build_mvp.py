@@ -30,7 +30,8 @@ HEADERS = [
     ("activity_type", "Veiklos tipas"),
     ("activity_label", "Veikla"),
     ("concrete_plant_name", "Betono mazgo / gamyklos pavadinimas"),
-    ("concrete_plant_capacity", "Betono mazgo našumas"),
+    ("concrete_plant_mixer", "Maišyklė"),
+    ("concrete_plant_capacity", "Našumas (realus)"),
     ("concrete_plant_silos_count", "Silosų skaičius"),
     ("concrete_plant_description", "Viešas betono mazgo / gamyklos aprašymas"),
     ("classification_confidence", "Klasifikavimo pasitikėjimas"),
@@ -56,6 +57,7 @@ def load_companies() -> list[dict]:
     with SEED_PATH.open(encoding="utf-8") as file:
         companies = json.load(file)
     for company in companies:
+        company.setdefault("concrete_plant_mixer", "")
         company.setdefault("concrete_plant_silos_count", "")
     return companies
 
@@ -127,16 +129,16 @@ def write_workbook(companies: list[dict]) -> None:
     for row in ws.iter_rows(min_row=2, min_col=9, max_col=10):
         for cell in row:
             cell.number_format = "0.000000"
-    for row in ws.iter_rows(min_row=2, min_col=20, max_col=20):
-        for cell in row:
-            cell.number_format = "0.00"
     for row in ws.iter_rows(min_row=2, min_col=21, max_col=21):
         for cell in row:
-            cell.number_format = "#,##0"
+            cell.number_format = "0.00"
     for row in ws.iter_rows(min_row=2, min_col=22, max_col=22):
         for cell in row:
+            cell.number_format = "#,##0"
+    for row in ws.iter_rows(min_row=2, min_col=23, max_col=23):
+        for cell in row:
             cell.number_format = "0"
-    for row in ws.iter_rows(min_row=2, min_col=23, max_col=24):
+    for row in ws.iter_rows(min_row=2, min_col=24, max_col=25):
         for cell in row:
             cell.number_format = "#,##0"
 

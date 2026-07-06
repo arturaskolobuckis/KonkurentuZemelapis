@@ -17,7 +17,8 @@ Excel lape `Įmonės` saugomi šie laukai:
 - Veiklos tipas.
 - Veikla.
 - Betono mazgo / gamyklos pavadinimas.
-- Betono mazgo našumas.
+- Maišyklė.
+- Našumas (realus).
 - Silosų skaičius.
 - Viešas betono mazgo / gamyklos aprašymas.
 - Klasifikavimo pasitikėjimas.
