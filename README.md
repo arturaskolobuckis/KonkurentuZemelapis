@@ -1,22 +1,41 @@
 # Konkurentų žemėlapis
 
-Tai techninis projekto katalogas žemėlapiui, Excel duomenims ir automatiniam JSON generavimui.
+Tikslas: automatizuotai rinkti ir atnaujinti informaciją apie Lietuvos įmones, kurios gamina betono mišinius, valdo betono mazgus, gamina gelžbetonį arba surenkamą gelžbetonį, ir rodyti ją interaktyviame žemėlapyje.
 
-Visa projekto dokumentacija perkelta į:
+## Dabartinė versija
 
-```text
-C:\Users\AKolobuckis\OneDrive - Concretus\Documents\4. Gamyba\0. Projektai\2026\KonkurentuZemelapis\Dokumentacija
-```
+- Apimtis: visa Lietuva.
+- Dabartinis duomenų kiekis: 45 įrašai, 24 miestai / vietovės.
+- Vieša žemėlapio nuoroda: https://konkurentuzemelapis.pages.dev
+- GitHub repozitorija: https://github.com/arturaskolobuckis/KonkurentuZemelapis
+- Duomenų laikmena: `data/companies.xlsx`.
+- Žemėlapio duomenys: `public/data/companies.json`.
+- Žemėlapis: statinis Leaflet puslapis aplanke `public/`.
+- Automatizavimas: GitHub Actions ruošinys savaitiniam atnaujinimui.
+- Mokamos API nenaudojamos.
+- Masinis Rekvizitai.lt kopijavimas nenaudojamas.
 
-## Pagrindiniai techniniai failai
+## Įtraukiamos veiklos
 
-- `data/companies.xlsx` - Excel duomenų failas.
-- `public/data/companies.json` - žemėlapio duomenys.
-- `public/index.html` - viešas žemėlapio puslapis.
-- `scripts/build_mvp.py` - Excel ir JSON generavimas.
-- `scripts/fetch_open_data.py` - duomenų ir šaltinių patikra.
+- Betono mišiniai.
+- Betono mazgai.
+- Gelžbetonis.
+- Surenkamas gelžbetonis.
+- Ready-mix concrete.
+- Precast concrete.
 
-## Vietinė patikra
+Trinkelės neįtraukiamos, jei tai pagrindinė įmonės veikla.
+
+## Pagrindiniai failai
+
+- [Excel duomenys](data/companies.xlsx)
+- [Žemėlapio JSON](public/data/companies.json)
+- [Žemėlapio puslapis](public/index.html)
+- [Duomenų generavimo skriptas](scripts/build_mvp.py)
+- [Šaltinių patikros skriptas](scripts/fetch_open_data.py)
+- [Paleidimas per GitHub ir Cloudflare](docs/paleidimas-github-cloudflare.md)
+
+## Vietinis paleidimas
 
 ```powershell
 python scripts/fetch_open_data.py
@@ -24,8 +43,12 @@ python scripts/build_mvp.py
 python -m http.server 4173 --directory public
 ```
 
-Vieša žemėlapio nuoroda:
+Tada atidaryti:
 
 ```text
-https://konkurentuzemelapis.pages.dev
+http://localhost:4173
 ```
+
+## Pastaba dėl duomenų pilnumo
+
+Jei apyvarta, darbuotojų skaičius, transporto priemonių skaičius, betono mazgo našumas arba kitas laukas greitai nerandamas nemokamame viešame šaltinyje, laukas paliekamas tuščias. Excel faile yra pastabų / rankinio papildymo stulpelis.
