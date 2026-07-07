@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T09:56:51.040705+00:00",
+  "generated_at": "2026-07-07T10:10:08.359406+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -796,23 +796,23 @@
       "longitude": 23.9291769,
       "activity_type": "ready_mix_concrete",
       "activity_label": "Betono mišiniai",
-      "concrete_plant_name": "Transdosa betono mazgas",
-      "concrete_plant_capacity": "",
-      "concrete_plant_description": "Viešai skelbiamas betono mišinių tiekėjas Druskininkų regione.",
+      "concrete_plant_name": "Elkomix-90 quick master",
+      "concrete_plant_capacity": "40 m³/h",
+      "concrete_plant_description": "Viešai skelbiamas betono mišinių tiekėjas Druskininkų regione. Naudotojo duomenimis, mazgas (gamintojas) yra Elkomix-90 quick master, maišyklė 1,5 m³, realus našumas 40 m³/h, 2 silosai.",
       "classification_confidence": 0.7,
       "website": "https://transdosa.lt/",
       "source_url": "https://www.transdosa.lt/kontaktai/",
       "plant_source_url": "https://www.transdosa.lt/betonas/",
-      "manual_note": "Oficialūs Transdosa kontaktų ir betono puslapiai patvirtina Margų karjero betono gamybą adresu Žvyro g. 2A.",
-      "last_updated": "2026-06-29",
+      "manual_note": "Oficialūs Transdosa kontaktų ir betono puslapiai patvirtina Margų karjero betono gamybą adresu Žvyro g. 2A. Techniniai mazgo duomenys įrašyti pagal naudotojo pateiktą informaciją.",
+      "last_updated": "2026-07-07",
       "coordinate_source_name": "Lietuvos geolokatorius",
       "coordinate_source_url": "https://hub.arcgis.com/content/b9e27b4266524b39bc651d6a26480b87",
       "coordinate_match_address": "Žvyro g. 2A, 67266, Margų k., Leipalingio sen., Druskininkų sav.",
       "coordinate_match_score": 98.57,
       "coordinate_match_type": "PointAddress",
       "coordinate_quality": "Tikslus adreso taškas",
-      "concrete_plant_mixer": "",
-      "concrete_plant_silos_count": ""
+      "concrete_plant_mixer": "1,5 m³",
+      "concrete_plant_silos_count": 2
     },
     {
       "company_code": "",
