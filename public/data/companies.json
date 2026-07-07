@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-07T10:10:08.359406+00:00",
+  "generated_at": "2026-07-07T10:16:56.134708+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -798,7 +798,7 @@
       "activity_label": "Betono mišiniai",
       "concrete_plant_name": "Elkomix-90 quick master",
       "concrete_plant_capacity": "40 m³/h",
-      "concrete_plant_description": "Viešai skelbiamas betono mišinių tiekėjas Druskininkų regione. Naudotojo duomenimis, mazgas (gamintojas) yra Elkomix-90 quick master, maišyklė 1,5 m³, realus našumas 40 m³/h, 2 silosai.",
+      "concrete_plant_description": "Viešai skelbiamas betono mišinių tiekėjas Druskininkų regione.",
       "classification_confidence": 0.7,
       "website": "https://transdosa.lt/",
       "source_url": "https://www.transdosa.lt/kontaktai/",
