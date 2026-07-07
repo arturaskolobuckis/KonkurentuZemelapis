@@ -72,6 +72,6 @@ Root directory: /
 ## Ribojimai
 
 - Duomenys yra greitas MVP sąrašas, ne galutinė pilna duomenų bazė.
-- Apyvarta, darbuotojai ir transportas paliekami tušti, jei nėra greitai ir nemokamai pasiekiamo patikimo šaltinio.
+- Techniniai mazgo laukai paliekami tušti, jei nėra greitai ir nemokamai pasiekiamo patikimo šaltinio.
 - Rekvizitai.lt masinis kopijavimas nenaudojamas.
 - Pilnas Registrų centro, „Sodros“ ir kitų atvirų duomenų importas yra kitas etapas.

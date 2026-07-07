@@ -39,13 +39,11 @@ Pagrindiniai laukai:
 - Adresas.
 - Koordinatės.
 - Veiklos tipas.
-- Betono mazgo / gamyklos pavadinimas.
-- Betono mazgo našumas.
+- Mazgas (gamintojas).
+- Maišyklė.
+- Našumas (realus).
+- Silosų skaičius.
 - Viešas betono mazgo / gamyklos aprašymas.
-- Įmonės apyvarta.
-- Apyvartos metai.
-- Darbuotojų skaičius.
-- Automobilių / transporto priemonių skaičius.
 - Pagrindinis šaltinis.
 - Laukų šaltiniai, jei jie žinomi.
 - Pastaba / rankinis papildymas.
@@ -63,7 +61,6 @@ Pagrindiniai laukai:
 ## Artimiausi etapai
 
 1. Prijungti Registrų centro atvirus juridinių asmenų duomenis.
-2. Prijungti finansinių ataskaitų atvirus duomenis, kur įmanoma automatiškai susieti įmonės kodą.
-3. Prijungti „Sodros“ viešus draudėjų duomenis darbuotojų skaičiui.
-4. Pridėti patikimesnį geokodavimą naujiems adresams.
-5. Atskiriant registracijos adresą nuo faktinės gamybos vietos, papildyti faktinius betono mazgus.
+2. Pridėti patikimesnį geokodavimą naujiems adresams.
+3. Atskiriant registracijos adresą nuo faktinės gamybos vietos, papildyti faktinius betono mazgus.
+4. Papildyti techninę mazgų informaciją: gamintojas, maišyklė, realus našumas, silosų skaičius.

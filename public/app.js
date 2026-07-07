@@ -72,11 +72,6 @@ function escapeHtml(value) {
 }
 
 function popupHtml(company) {
-  const revenue = company.revenue_latest
-    ? `${Number(company.revenue_latest).toLocaleString("lt-LT")} EUR`
-    : "Nėra duomenų";
-  const employees = company.employees_latest ?? "Nėra duomenų";
-  const vehicles = company.vehicles_latest ?? "Nėra duomenų";
   const capacity = company.concrete_plant_capacity || "Nėra duomenų";
   const mixer = company.concrete_plant_mixer || "Nėra duomenų";
   const silosCount = company.concrete_plant_silos_count || "Nėra duomenų";
@@ -90,14 +85,11 @@ function popupHtml(company) {
         <dt>Veikla</dt><dd>${escapeHtml(company.activity_label)}</dd>
         <dt>Miestas</dt><dd>${escapeHtml(company.city)}</dd>
         <dt>Adresas</dt><dd>${escapeHtml(company.address)}</dd>
-        <dt>Mazgas</dt><dd>${escapeHtml(plantName)}</dd>
+        <dt>Mazgas (gamintojas)</dt><dd>${escapeHtml(plantName)}</dd>
         <dt>Maišyklė</dt><dd>${escapeHtml(mixer)}</dd>
         <dt>Našumas (realus)</dt><dd>${escapeHtml(capacity)}</dd>
         <dt>Silosai</dt><dd>${escapeHtml(silosCount)}</dd>
         <dt>Aprašymas</dt><dd>${escapeHtml(description)}</dd>
-        <dt>Apyvarta</dt><dd>${escapeHtml(revenue)}</dd>
-        <dt>Darbuotojai</dt><dd>${escapeHtml(employees)}</dd>
-        <dt>Transportas</dt><dd>${escapeHtml(vehicles)}</dd>
         <dt>Šaltinis</dt><dd><a href="${escapeHtml(company.source_url)}" target="_blank" rel="noreferrer">Atidaryti</a></dd>
       </dl>
     </div>
@@ -128,7 +120,7 @@ function filteredCompanies() {
   return companies.filter((company) => {
     const cityOk = selectedCity === "all" || company.city === selectedCity;
     const activityOk = selectedActivity === "all" || company.activity_label === selectedActivity;
-    const needsManual = !company.concrete_plant_name || !company.concrete_plant_mixer || !company.concrete_plant_capacity || !company.concrete_plant_silos_count || !company.revenue_latest || !company.employees_latest || !company.vehicles_latest;
+    const needsManual = !company.concrete_plant_name || !company.concrete_plant_mixer || !company.concrete_plant_capacity || !company.concrete_plant_silos_count;
     const completenessOk =
       selectedCompleteness === "all" ||
       (selectedCompleteness === "needs_manual" && needsManual) ||
@@ -155,7 +147,7 @@ function renderList(items) {
     button.innerHTML = `
       <strong>${escapeHtml(company.brand || company.name)}</strong>
       <span>${escapeHtml(company.city)} - ${escapeHtml(company.address)}</span>
-      <span>${escapeHtml(company.concrete_plant_name || "Mazgo pavadinimą reikia papildyti")}</span>
+      <span>${escapeHtml(company.concrete_plant_name || "Mazgo gamintoją reikia papildyti")}</span>
       <span>Maišyklė: ${escapeHtml(company.concrete_plant_mixer || "nėra duomenų")} · Našumas (realus): ${escapeHtml(company.concrete_plant_capacity || "nėra duomenų")} · Silosai: ${escapeHtml(company.concrete_plant_silos_count || "nėra duomenų")}</span>
       <span class="activity-pill">${escapeHtml(company.activity_label)}</span>
     `;

@@ -30,8 +30,9 @@ Dabartinė versija apima visą Lietuvą, bet duomenys dar nėra galutinai pilni.
 Šie laukai gali būti tušti, jei duomenys greitai nerandami viešai ir nemokamai:
 
 - Betono mazgo našumas.
-- Įmonės apyvarta.
-- Darbuotojų skaičius.
-- Automobilių / transporto priemonių skaičius.
+- Mazgas (gamintojas).
+- Maišyklė.
+- Našumas (realus).
+- Silosų skaičius.
 
 Tokie laukai paliekami Excel faile rankiniam papildymui arba vėlesniam automatiniam importui.

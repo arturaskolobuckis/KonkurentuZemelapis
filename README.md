@@ -51,4 +51,4 @@ http://localhost:4173
 
 ## Pastaba dėl duomenų pilnumo
 
-Jei apyvarta, darbuotojų skaičius, transporto priemonių skaičius, betono mazgo našumas arba kitas laukas greitai nerandamas nemokamame viešame šaltinyje, laukas paliekamas tuščias. Excel faile yra pastabų / rankinio papildymo stulpelis.
+Jei mazgo gamintojas, maišyklė, realus našumas, silosų skaičius arba kitas techninis laukas greitai nerandamas nemokamame viešame šaltinyje, laukas paliekamas tuščias. Excel faile yra pastabų / rankinio papildymo stulpelis.

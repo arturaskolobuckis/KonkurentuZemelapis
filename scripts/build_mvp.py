@@ -29,21 +29,14 @@ HEADERS = [
     ("coordinate_source_url", "Koordinačių šaltinio URL"),
     ("activity_type", "Veiklos tipas"),
     ("activity_label", "Veikla"),
-    ("concrete_plant_name", "Betono mazgo / gamyklos pavadinimas"),
+    ("concrete_plant_name", "Mazgas (gamintojas)"),
     ("concrete_plant_mixer", "Maišyklė"),
     ("concrete_plant_capacity", "Našumas (realus)"),
     ("concrete_plant_silos_count", "Silosų skaičius"),
     ("concrete_plant_description", "Viešas betono mazgo / gamyklos aprašymas"),
     ("classification_confidence", "Klasifikavimo pasitikėjimas"),
-    ("revenue_latest", "Įmonės apyvarta"),
-    ("revenue_year", "Apyvartos metai"),
-    ("employees_latest", "Darbuotojų skaičius"),
-    ("vehicles_latest", "Automobilių / transporto priemonių skaičius"),
     ("website", "Interneto svetainė"),
     ("source_url", "Pagrindinis šaltinis"),
-    ("revenue_source_url", "Apyvartos šaltinis"),
-    ("employees_source_url", "Darbuotojų šaltinis"),
-    ("vehicles_source_url", "Transporto šaltinis"),
     ("plant_source_url", "Betono mazgo / gamyklos šaltinis"),
     ("manual_note", "Pastaba / rankinis papildymas"),
     ("last_updated", "Paskutinio atnaujinimo data"),
@@ -51,6 +44,28 @@ HEADERS = [
 
 KEYS = [key for key, _label in HEADERS]
 LABELS = [label for _key, label in HEADERS]
+
+TEMPLATE_HEADERS = [
+    ("company_id", "Įrašo ID"),
+    ("company_code", "Įmonės kodas"),
+    ("name", "Įmonės pavadinimas"),
+    ("brand", "Prekės ženklas"),
+    ("city", "Miestas"),
+    ("municipality", "Savivaldybė"),
+    ("address", "Adresas"),
+    ("latitude", "Platuma"),
+    ("longitude", "Ilguma"),
+    ("activity_type", "Veiklos tipas"),
+    ("activity_label", "Veikla"),
+    ("concrete_plant_name", "Mazgas (gamintojas)"),
+    ("concrete_plant_mixer", "Maišyklė"),
+    ("concrete_plant_capacity", "Našumas (realus)"),
+    ("concrete_plant_silos_count", "Silosų skaičius"),
+    ("concrete_plant_description", "Viešas aprašymas"),
+    ("source_url", "Pagrindinis šaltinis"),
+    ("plant_source_url", "Mazgo / gamyklos šaltinis"),
+    ("manual_note", "Pastaba"),
+]
 
 
 def load_companies() -> list[dict]:
@@ -71,7 +86,7 @@ def write_json(companies: list[dict]) -> None:
             "cities": "Visa Lietuva",
             "excluded_keywords": ["trinkelės"],
         },
-        "companies": companies,
+            "companies": companies,
     }
     (PUBLIC_DATA_DIR / "companies.json").write_text(
         json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
@@ -132,15 +147,9 @@ def write_workbook(companies: list[dict]) -> None:
     for row in ws.iter_rows(min_row=2, min_col=21, max_col=21):
         for cell in row:
             cell.number_format = "0.00"
-    for row in ws.iter_rows(min_row=2, min_col=22, max_col=22):
-        for cell in row:
-            cell.number_format = "#,##0"
-    for row in ws.iter_rows(min_row=2, min_col=23, max_col=23):
+    for row in ws.iter_rows(min_row=2, min_col=19, max_col=19):
         for cell in row:
             cell.number_format = "0"
-    for row in ws.iter_rows(min_row=2, min_col=24, max_col=25):
-        for cell in row:
-            cell.number_format = "#,##0"
 
     auto_width(ws)
 
@@ -177,11 +186,69 @@ def write_workbook(companies: list[dict]) -> None:
     wb.save(DATA_DIR / "companies.xlsx")
 
 
+def write_import_template() -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    wb = Workbook()
+    ws = wb.active
+    ws.title = "Pildymo šablonas"
+    labels = [label for _key, label in TEMPLATE_HEADERS]
+    ws.append(labels)
+    ws.append(
+        [
+            "pvz-uab-betonas",
+            "123456789",
+            "UAB Pavyzdinė įmonė",
+            "Pavyzdinis betonas",
+            "Vilnius",
+            "Vilniaus m. sav.",
+            "Gamyklos g. 1, Vilnius",
+            54.6872,
+            25.2797,
+            "ready_mix_concrete",
+            "Betono mišiniai",
+            "Stetter",
+            "2x3,35 m³",
+            "100 m³/val.",
+            2,
+            "Trumpas viešai randamas mazgo arba gamyklos aprašymas.",
+            "https://imones-saltinis.lt/",
+            "https://mazgo-saltinis.lt/",
+            "Pastabos, ką dar reikia patikslinti.",
+        ]
+    )
+    style_header(ws[1])
+    ws.freeze_panes = "A2"
+    ws.auto_filter.ref = ws.dimensions
+    table = Table(displayName="ImportTemplateTable", ref=ws.dimensions)
+    table.tableStyleInfo = TableStyleInfo(
+        name="TableStyleMedium2",
+        showFirstColumn=False,
+        showLastColumn=False,
+        showRowStripes=True,
+        showColumnStripes=False,
+    )
+    ws.add_table(table)
+    thin = Side(style="thin", color="E5E7EB")
+    for row in ws.iter_rows():
+        for cell in row:
+            cell.border = Border(bottom=thin)
+            cell.alignment = Alignment(vertical="top", wrap_text=True)
+    for row in ws.iter_rows(min_row=2, min_col=8, max_col=9):
+        for cell in row:
+            cell.number_format = "0.000000"
+    for row in ws.iter_rows(min_row=2, min_col=15, max_col=15):
+        for cell in row:
+            cell.number_format = "0"
+    auto_width(ws)
+    wb.save(DATA_DIR / "import_template.xlsx")
+
+
 def main() -> None:
     companies = load_companies()
     write_json(companies)
     write_workbook(companies)
-    print(f"Built data/companies.xlsx and public/data/companies.json for {len(companies)} rows.")
+    write_import_template()
+    print(f"Built data/companies.xlsx, data/import_template.xlsx and public/data/companies.json for {len(companies)} rows.")
 
 
 if __name__ == "__main__":

@@ -16,21 +16,14 @@ Excel lape `Įmonės` saugomi šie laukai:
 - Ilguma.
 - Veiklos tipas.
 - Veikla.
-- Betono mazgo / gamyklos pavadinimas.
+- Mazgas (gamintojas).
 - Maišyklė.
 - Našumas (realus).
 - Silosų skaičius.
 - Viešas betono mazgo / gamyklos aprašymas.
 - Klasifikavimo pasitikėjimas.
-- Įmonės apyvarta.
-- Apyvartos metai.
-- Darbuotojų skaičius.
-- Automobilių / transporto priemonių skaičius.
 - Interneto svetainė.
 - Pagrindinis šaltinis.
-- Apyvartos šaltinis.
-- Darbuotojų šaltinis.
-- Transporto šaltinis.
 - Betono mazgo / gamyklos šaltinis.
 - Pastaba / rankinis papildymas.
 - Paskutinio atnaujinimo data.
@@ -42,13 +35,12 @@ Excel lape `Įmonės` saugomi šie laukai:
 
 ## Duomenų pildymo taisyklės
 
-- Jei betono mazgo pavadinimas viešai randamas, jis įrašomas.
-- Jei pavadinimo nepavyksta patikimai rasti, laukas paliekamas tuščias arba pildomas apibendrintu pavadinimu pagal miestą.
+- Jei betono mazgo gamintojas viešai randamas arba žinomas iš patikimo vidinio šaltinio, jis įrašomas.
+- Jei gamintojo nepavyksta patikimai rasti, laukas paliekamas tuščias arba pildomas apibendrintu pavadinimu pagal miestą.
 - Jei našumas viešai randamas, jis įrašomas, pvz. `150 m³/val.`.
 - Jei našumo nepavyksta rasti, laukas paliekamas tuščias.
 - Jei silosų skaičius viešai randamas, jis įrašomas skaičiumi.
 - Jei silosų skaičiaus nepavyksta rasti, laukas paliekamas tuščias.
-- Jei apyvarta, darbuotojai arba transportas nerandami nemokamuose šaltiniuose, laukai paliekami tušti.
 - Kiekvienam įrašui turi būti bent vienas pagrindinis šaltinio URL.
 
 ## JSON struktūra
