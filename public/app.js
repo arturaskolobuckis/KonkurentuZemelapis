@@ -2,8 +2,33 @@ const map = L.map("map", {
   center: [55.12, 23.08],
   zoom: 7,
   preferCanvas: true,
-  zoomControl: true
+  zoomControl: false
 });
+
+const zoomButtons = L.control({ position: "topright" });
+zoomButtons.onAdd = () => {
+  const container = L.DomUtil.create("div", "map-zoom-control");
+  const zoomIn = L.DomUtil.create("button", "", container);
+  const zoomOut = L.DomUtil.create("button", "", container);
+
+  zoomIn.type = "button";
+  zoomIn.textContent = "+";
+  zoomIn.title = "Priartinti";
+  zoomIn.setAttribute("aria-label", "Priartinti žemėlapį");
+
+  zoomOut.type = "button";
+  zoomOut.textContent = "-";
+  zoomOut.title = "Atitolinti";
+  zoomOut.setAttribute("aria-label", "Atitolinti žemėlapį");
+
+  L.DomEvent.disableClickPropagation(container);
+  L.DomEvent.disableScrollPropagation(container);
+  L.DomEvent.on(zoomIn, "click", () => map.zoomIn());
+  L.DomEvent.on(zoomOut, "click", () => map.zoomOut());
+
+  return container;
+};
+zoomButtons.addTo(map);
 
 L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",

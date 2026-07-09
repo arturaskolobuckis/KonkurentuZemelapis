@@ -214,6 +214,35 @@ input:focus {
   height: 100%;
 }
 
+.map-zoom-control {
+  display: grid;
+  gap: 6px;
+  margin: 16px 16px 0 0;
+}
+
+.map-zoom-control button {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border: 1px solid rgba(22, 32, 31, 0.18);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(22, 32, 31, 0.2);
+  color: var(--text);
+  cursor: pointer;
+  font: inherit;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.map-zoom-control button:hover,
+.map-zoom-control button:focus-visible {
+  border-color: var(--accent);
+  outline: 2px solid rgba(15, 118, 110, 0.25);
+}
+
 #map .leaflet-pane,
 #map .leaflet-tile,
 #map .leaflet-marker-icon,
