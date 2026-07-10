@@ -218,6 +218,8 @@ input:focus {
   display: grid;
   gap: 6px;
   margin: 0 16px 34px 0;
+  position: relative;
+  z-index: 1000;
 }
 
 .map-zoom-control button {
