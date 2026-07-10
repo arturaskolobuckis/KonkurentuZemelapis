@@ -16,6 +16,8 @@ function loadScript(src) {
 }
 
 async function startApp() {
+  await loadRuntimeConfig();
+
   const hasGoogleKey = Boolean(String(window.APP_CONFIG?.googleMapsApiKey || "").trim());
 
   if (hasGoogleKey) {
@@ -30,6 +32,21 @@ async function startApp() {
   await loadScript("https://unpkg.com/leaflet@1.9.4/dist/leaflet.js");
   await loadScript("https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js");
   await loadScript("app.js");
+}
+
+async function loadRuntimeConfig() {
+  try {
+    const response = await fetch("/api/config", { cache: "no-store" });
+    if (!response.ok) return;
+
+    const runtimeConfig = await response.json();
+    window.APP_CONFIG = {
+      ...(window.APP_CONFIG || {}),
+      ...runtimeConfig
+    };
+  } catch {
+    // Local static preview does not run Cloudflare Pages Functions.
+  }
 }
 
 startApp().catch((error) => {

@@ -20,7 +20,9 @@ Cloudflare Pages projekte `konkurentuzemelapis` pridėkite aplinkos kintamąjį:
 GOOGLE_MAPS_API_KEY=čia_įrašomas_google_maps_raktas
 ```
 
-Po to paleiskite naują deploy. Build metu `scripts/build_config.mjs` sugeneruos `public/config.js`, o svetainė automatiškai persijungs į Google Maps.
+Po to paleiskite naują deploy. Svetainė raktą pasiims per Cloudflare Pages Function `/api/config` ir automatiškai persijungs į Google Maps.
+
+`scripts/build_config.mjs` paliktas kaip atsarginis kelias, jei kada nors reikėtų raktą įrašyti build metu.
 
 ## 3. Patikra
 
