@@ -71,8 +71,8 @@
     "classification_confidence": 0.9,
     "website": "https://betonocentras.lt/",
     "source_url": "https://betonocentras.lt/kontaktai/",
-    "plant_source_url": "",
-    "last_updated": "2026-07-09",
+    "plant_source_url": "https://www.google.com/maps?q=54.43883333333333,25.081",
+    "last_updated": "2026-07-10",
     "coordinate_source_name": "Naudotojo pateiktos koordinatės",
     "coordinate_match_score": 100.0,
     "coordinate_match_type": "UserProvidedPoint",
@@ -89,7 +89,7 @@
     "concrete_plant_description": "Betono centro betono mazgas Rūdninguose.",
     "manual_note": "Papildomas Betono centro mazgas įtrauktas pagal naudotojo pateiktą informaciją. Koordinatės pateiktos DMS formatu: 54°26'19.8\"N 25°04'51.6\"E.",
     "coordinate_match_address": "Rūdningai",
-    "coordinate_source_url": ""
+    "coordinate_source_url": "https://www.google.com/maps?q=54.43883333333333,25.081"
   },
   {
     "company_code": "123018186",
@@ -102,8 +102,8 @@
     "classification_confidence": 0.9,
     "website": "https://betonocentras.lt/",
     "source_url": "https://betonocentras.lt/kontaktai/",
-    "plant_source_url": "",
-    "last_updated": "2026-07-09",
+    "plant_source_url": "https://www.google.com/maps?q=54.439245484061935,25.080984271007022",
+    "last_updated": "2026-07-10",
     "coordinate_source_name": "Naudotojo pateiktos koordinatės",
     "coordinate_match_score": 100.0,
     "coordinate_match_type": "UserProvidedPoint",
@@ -120,7 +120,7 @@
     "concrete_plant_description": "Betono centro betono mazgas Rūdninkuose.",
     "manual_note": "Papildomas Betono centro mazgas įtrauktas pagal naudotojo pateiktą informaciją. Koordinatės pateiktos dešimtainiu formatu.",
     "coordinate_match_address": "Rūdninkai",
-    "coordinate_source_url": ""
+    "coordinate_source_url": "https://www.google.com/maps?q=54.439245484061935,25.080984271007022"
   },
   {
     "company_id": "betono-centras-kaunas",
