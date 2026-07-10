@@ -5,7 +5,7 @@ const map = L.map("map", {
   zoomControl: false
 });
 
-const zoomButtons = L.control({ position: "topright" });
+const zoomButtons = L.control({ position: "bottomright" });
 zoomButtons.onAdd = () => {
   const container = L.DomUtil.create("div", "map-zoom-control");
   const zoomIn = L.DomUtil.create("button", "", container);
