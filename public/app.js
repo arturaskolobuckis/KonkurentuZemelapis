@@ -5,30 +5,24 @@ const map = L.map("map", {
   zoomControl: false
 });
 
-const zoomButtons = L.control({ position: "bottomright" });
-zoomButtons.onAdd = () => {
-  const container = L.DomUtil.create("div", "map-zoom-control");
-  const zoomIn = L.DomUtil.create("button", "", container);
-  const zoomOut = L.DomUtil.create("button", "", container);
+const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());
+const zoomIn = L.DomUtil.create("button", "", zoomButtons);
+const zoomOut = L.DomUtil.create("button", "", zoomButtons);
 
-  zoomIn.type = "button";
-  zoomIn.textContent = "+";
-  zoomIn.title = "Priartinti";
-  zoomIn.setAttribute("aria-label", "Priartinti žemėlapį");
+zoomIn.type = "button";
+zoomIn.textContent = "+";
+zoomIn.title = "Priartinti";
+zoomIn.setAttribute("aria-label", "Priartinti žemėlapį");
 
-  zoomOut.type = "button";
-  zoomOut.textContent = "-";
-  zoomOut.title = "Atitolinti";
-  zoomOut.setAttribute("aria-label", "Atitolinti žemėlapį");
+zoomOut.type = "button";
+zoomOut.textContent = "-";
+zoomOut.title = "Atitolinti";
+zoomOut.setAttribute("aria-label", "Atitolinti žemėlapį");
 
-  L.DomEvent.disableClickPropagation(container);
-  L.DomEvent.disableScrollPropagation(container);
-  L.DomEvent.on(zoomIn, "click", () => map.zoomIn());
-  L.DomEvent.on(zoomOut, "click", () => map.zoomOut());
-
-  return container;
-};
-zoomButtons.addTo(map);
+L.DomEvent.disableClickPropagation(zoomButtons);
+L.DomEvent.disableScrollPropagation(zoomButtons);
+L.DomEvent.on(zoomIn, "click", () => map.zoomIn());
+L.DomEvent.on(zoomOut, "click", () => map.zoomOut());
 
 L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
