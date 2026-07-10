@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "npm run build:config",
+    "build:config": "node scripts/build_config.mjs",
     "build:data": "python scripts/build_mvp.py",
     "serve": "python -m http.server 4173 --directory public"
   }
