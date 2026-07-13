@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node -e \"console.log('Static site build: public directory is ready')\"",
     "build:data": "python scripts/build_mvp.py",
     "serve": "python -m http.server 4173 --directory public"
   }
