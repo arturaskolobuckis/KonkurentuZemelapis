@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T05:53:33.366596+00:00",
+  "generated_at": "2026-07-17T10:51:46.337148+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -2084,6 +2084,37 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "OfficialWebsiteMapPoint",
       "coordinate_quality": "Oficialiame puslapyje pateiktas gamyklos taškas"
+    },
+    {
+      "company_id": "reljef-rukla",
+      "company_code": "301731961",
+      "name": "UAB Reljef",
+      "brand": "Reljef",
+      "market_role": "Konkurentas",
+      "city": "Rukla",
+      "municipality": "Jonavos r. sav.",
+      "address": "Rukla, Jonavos r. sav.",
+      "latitude": 55.05225,
+      "longitude": 24.4064167,
+      "activity_type": "ready_mix_concrete",
+      "activity_label": "Betono mišiniai",
+      "concrete_plant_name": "Ammann Elba",
+      "concrete_plant_mixer": "Nenustatyta",
+      "concrete_plant_capacity": "Nenustatytas",
+      "concrete_plant_silos_count": "2x65 t",
+      "concrete_plant_description": "Rukloje veikiantis UAB Reljef betono mazgas: Ammann Elba, 2x65 t silosai. Maišyklė ir našumas nenustatyti.",
+      "classification_confidence": 0.82,
+      "website": "https://www.reljef.lt/",
+      "source_url": "https://www.reljef.lt/",
+      "plant_source_url": "https://www.openstreetmap.org/?mlat=55.05225&mlon=24.4064167#map=18/55.05225/24.4064167",
+      "manual_note": "Įmonės rekvizitai paimti iš oficialaus UAB Reljef puslapio. Betono mazgo gamintojas, silosai ir lokacija įrašyti pagal naudotojo pateiktą informaciją. Artimiausias viešai geokoduotas adresas nustatytas pagal OpenStreetMap.",
+      "last_updated": "2026-07-17",
+      "coordinate_source_name": "Naudotojo pateiktos koordinatės",
+      "coordinate_source_url": "https://www.openstreetmap.org/?mlat=55.05225&mlon=24.4064167#map=18/55.05225/24.4064167",
+      "coordinate_match_address": "Artimiausias geokoduotas adresas: Paupio g. 18, Rukla, Jonavos r. sav.",
+      "coordinate_match_score": 95.0,
+      "coordinate_match_type": "UserProvidedCoordinates",
+      "coordinate_quality": "Tikslus naudotojo pateiktas taškas; adresas artimiausias pagal OpenStreetMap"
     }
   ]
 }
