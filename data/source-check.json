@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-07-13T13:31:48.192152+00:00",
-  "rows": 63,
+  "checked_at": "2026-07-20T12:36:01.969184+00:00",
+  "rows": 68,
   "scope": "Visa Lietuva",
   "issues": [],
   "sources": [
@@ -25,9 +25,14 @@
       "status": 200
     },
     {
-      "url": "https://data.gov.lt/dataset/juridiniu-asmenu-ekonomines-veiklos-rusys-ir-instituciniai-sektoriai/",
+      "url": "https://c3beton.com/lt/betonas",
       "ok": true,
       "status": 200
+    },
+    {
+      "url": "https://data.gov.lt/dataset/juridiniu-asmenu-ekonomines-veiklos-rusys-ir-instituciniai-sektoriai/",
+      "ok": false,
+      "error": "HTTP Error 429: Too Many Requests"
     },
     {
       "url": "https://ekobetonas.lt/kontaktai-betono-gamyba-armaturinis-plienas/",
@@ -161,6 +166,11 @@
     },
     {
       "url": "https://www.perdanga.lt/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.reljef.lt/",
       "ok": true,
       "status": 200
     },
