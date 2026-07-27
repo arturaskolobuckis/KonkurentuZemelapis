@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-07-20T12:36:01.969184+00:00",
+  "checked_at": "2026-07-27T13:55:00.533636+00:00",
   "rows": 68,
   "scope": "Visa Lietuva",
   "issues": [],
@@ -32,7 +32,7 @@
     {
       "url": "https://data.gov.lt/dataset/juridiniu-asmenu-ekonomines-veiklos-rusys-ir-instituciniai-sektoriai/",
       "ok": false,
-      "error": "HTTP Error 429: Too Many Requests"
+      "error": "The read operation timed out"
     },
     {
       "url": "https://ekobetonas.lt/kontaktai-betono-gamyba-armaturinis-plienas/",
