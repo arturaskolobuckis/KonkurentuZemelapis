@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T05:34:58.966488+00:00",
+  "generated_at": "2026-08-27T04:43:02.842440+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -2115,6 +2115,37 @@
       "coordinate_match_score": 95.0,
       "coordinate_match_type": "UserProvidedCoordinates",
       "coordinate_quality": "Tikslus naudotojo pateiktas taškas; adresas artimiausias pagal OpenStreetMap"
+    },
+    {
+      "company_id": "ponas-betonas-paraudondvariai",
+      "company_code": "306676006",
+      "name": "UAB Ponas betonas",
+      "brand": "Ponas betonas",
+      "market_role": "Konkurentas",
+      "city": "Paraudondvariai",
+      "municipality": "Vilniaus r. sav.",
+      "address": "Vilniaus g., Paraudondvariai, Riešės sen., Vilniaus r. sav.",
+      "latitude": 54.8321418,
+      "longitude": 25.2755596,
+      "activity_type": "ready_mix_concrete",
+      "activity_label": "Betono mišiniai",
+      "concrete_plant_name": "Ponas betonas betono mazgas",
+      "concrete_plant_mixer": "Nenurodyta viešai",
+      "concrete_plant_capacity": "Nenurodyta viešai",
+      "concrete_plant_silos_count": "Nenurodyta viešai",
+      "concrete_plant_description": "Oficialiame UAB Ponas betonas puslapyje nurodoma, kad įmonė turi nuosavą betono mazgą, gamina prekinį betoną ir jį pristato. Mazgo gamintojas, maišyklė, našumas ir silosų skaičius viešai nenurodyti.",
+      "classification_confidence": 0.98,
+      "website": "https://www.ponasbetonas.lt/",
+      "source_url": "https://www.ponasbetonas.lt/#Apiemus",
+      "plant_source_url": "https://maps.app.goo.gl/NxQohpnzv1q9DA6CA?g_st=ac",
+      "manual_note": "Nuosavas betono mazgas ir prekinio betono gamyba patvirtinti oficialiame įmonės puslapyje. Tiksli mazgo lokacija paimta iš naudotojo pateiktos Google Maps nuorodos; vietovė patikslinta pagal OpenStreetMap. Įmonės kodas patvirtintas Registrų centro viešame juridinio asmens pranešime.",
+      "last_updated": "2026-08-27",
+      "coordinate_source_name": "Naudotojo pateikta Google Maps lokacija",
+      "coordinate_source_url": "https://maps.app.goo.gl/NxQohpnzv1q9DA6CA?g_st=ac",
+      "coordinate_match_address": "Vilniaus g., Paraudondvariai, Riešės sen., Vilniaus r. sav., LT-14256",
+      "coordinate_match_score": 100.0,
+      "coordinate_match_type": "UserProvidedGoogleMapsPoint",
+      "coordinate_quality": "Tikslus naudotojo pateiktos Google Maps nuorodos taškas"
     }
   ]
 }

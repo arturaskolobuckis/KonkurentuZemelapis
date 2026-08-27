@@ -578,5 +578,115 @@
     "type": "PointAddress",
     "match": "Medelyno g. 30A, 69447, Jūrė, Kazlų Rūdos sen., Kazlų Rūdos sav.",
     "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "betono-centras-vilnius-zariju",
+    "query": "Naudotojo pateikta Google Maps lokacija",
+    "lat": 54.639438,
+    "lon": 25.136858,
+    "score": 100.0,
+    "type": "UserProvidedMapPoint",
+    "match": "Žarijų g. 6A, Vilnius",
+    "quality": "Naudotojo pateiktos Google Maps nuorodos taškas"
+  },
+  {
+    "company_id": "betono-centras-rudningai",
+    "query": "Naudotojo pateiktos koordinatės",
+    "lat": 54.43883333333333,
+    "lon": 25.081,
+    "score": 100.0,
+    "type": "UserProvidedPoint",
+    "match": "Rūdningai",
+    "quality": "Naudotojo pateiktas koordinačių taškas"
+  },
+  {
+    "company_id": "betono-centras-rudninkai",
+    "query": "Naudotojo pateiktos koordinatės",
+    "lat": 54.439245484061935,
+    "lon": 25.080984271007022,
+    "score": 100.0,
+    "type": "UserProvidedPoint",
+    "match": "Rūdninkai",
+    "quality": "Naudotojo pateiktas koordinačių taškas"
+  },
+  {
+    "company_id": "telsiu-keliai-telsiai",
+    "query": "Mažeikių g. 18, Telšiai, Telšių r. sav., Lietuva",
+    "lat": 56.0004158,
+    "lon": 22.2581129,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Mažeikių g. 18, 87101, Telšiai, Telšių miesto sen., Telšių r. sav.",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
+    "company_id": "vpa-laistai",
+    "query": "Naudotojo pateikta Google Maps lokacija",
+    "lat": 55.636908,
+    "lon": 21.209254,
+    "score": 100.0,
+    "type": "UserProvidedMapPoint",
+    "match": "Stariškės g. 9, Laistų k., Dovilų sen., Klaipėdos r. sav.",
+    "quality": "Naudotojo pateiktos Google Maps nuorodos taškas"
+  },
+  {
+    "company_id": "c3-beton-baisogala",
+    "query": "C3 Betonas oficialaus puslapio gamyklos taškas",
+    "lat": 55.6372,
+    "lon": 23.7183,
+    "score": 100.0,
+    "type": "OfficialWebsiteMapPoint",
+    "match": "Dvaro g., Baisogala, Baisogalos seniūnija, Radviliškio rajono savivaldybė",
+    "quality": "Oficialiame puslapyje pateiktas gamyklos taškas"
+  },
+  {
+    "company_id": "c3-beton-martiniskis",
+    "query": "C3 Betonas oficialaus puslapio gamyklos taškas",
+    "lat": 55.1441659,
+    "lon": 24.1869636,
+    "score": 100.0,
+    "type": "OfficialWebsiteMapPoint",
+    "match": "Vanagiškiai, Kulvos seniūnija, Jonavos rajono savivaldybė",
+    "quality": "Oficialiame puslapyje pateiktas gamyklos taškas"
+  },
+  {
+    "company_id": "c3-beton-stasenai",
+    "query": "C3 Betonas oficialaus puslapio gamyklos taškas",
+    "lat": 55.033,
+    "lon": 24.183,
+    "score": 100.0,
+    "type": "OfficialWebsiteMapPoint",
+    "match": "Dirvaliai, Šveicarijos seniūnija, Jonavos rajono savivaldybė",
+    "quality": "Oficialiame puslapyje pateiktas gamyklos taškas"
+  },
+  {
+    "company_id": "c3-beton-runeikiai",
+    "query": "C3 Betonas oficialaus puslapio gamyklos taškas",
+    "lat": 55.3327393,
+    "lon": 24.3501308,
+    "score": 100.0,
+    "type": "OfficialWebsiteMapPoint",
+    "match": "Paguiriai, Šėtos seniūnija, Kėdainių rajono savivaldybė",
+    "quality": "Oficialiame puslapyje pateiktas gamyklos taškas"
+  },
+  {
+    "company_id": "reljef-rukla",
+    "query": "Naudotojo pateiktos koordinatės",
+    "lat": 55.05225,
+    "lon": 24.4064167,
+    "score": 95.0,
+    "type": "UserProvidedCoordinates",
+    "match": "Artimiausias geokoduotas adresas: Paupio g. 18, Rukla, Jonavos r. sav.",
+    "quality": "Tikslus naudotojo pateiktas taškas; adresas artimiausias pagal OpenStreetMap"
+  },
+  {
+    "company_id": "ponas-betonas-paraudondvariai",
+    "query": "Naudotojo pateikta Google Maps lokacija",
+    "lat": 54.8321418,
+    "lon": 25.2755596,
+    "score": 100.0,
+    "type": "UserProvidedGoogleMapsPoint",
+    "match": "Vilniaus g., Paraudondvariai, Riešės sen., Vilniaus r. sav., LT-14256",
+    "quality": "Tikslus naudotojo pateiktos Google Maps nuorodos taškas"
   }
 ]
