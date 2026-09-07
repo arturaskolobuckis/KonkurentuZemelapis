@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-08-31T11:19:02.053061+00:00",
+  "checked_at": "2026-09-07T09:55:24.312322+00:00",
   "rows": 69,
   "scope": "Visa Lietuva",
   "issues": [],
@@ -36,8 +36,8 @@
     },
     {
       "url": "https://ekobetonas.lt/kontaktai-betono-gamyba-armaturinis-plienas/",
-      "ok": true,
-      "status": 200
+      "ok": false,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "url": "https://gelmesta.lt/",
