@@ -651,13 +651,13 @@
   },
   {
     "company_id": "c3-beton-stasenai",
-    "query": "C3 Betonas oficialaus puslapio gamyklos taškas",
-    "lat": 55.033,
-    "lon": 24.183,
+    "query": "Ušos g. 21, Vilnius, 02121, Vilniaus m. sav., Lietuva",
+    "lat": 54.6493094,
+    "lon": 25.3107972,
     "score": 100.0,
-    "type": "OfficialWebsiteMapPoint",
-    "match": "Dirvaliai, Šveicarijos seniūnija, Jonavos rajono savivaldybė",
-    "quality": "Oficialiame puslapyje pateiktas gamyklos taškas"
+    "type": "PointAddress",
+    "match": "Ušos g. 21, 02121, Vilnius, Vilniaus miesto, Vilniaus m. sav., Vilniaus apskritis",
+    "quality": "Tikslus adreso taškas pagal geokodavimą"
   },
   {
     "company_id": "c3-beton-runeikiai",
