@@ -5,9 +5,20 @@ const map = L.map("map", {
   zoomControl: false
 });
 
+const COVERAGE_RADIUS_METERS = 15000;
+const COVERAGE_TARGETS = [
+  { companyId: "betono-centras-vilnius", label: "Riovonių 15 km" },
+  { companyId: "betono-centras-vilnius-metalo", label: "Metalo 15 km" }
+];
+
 const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());
 const zoomIn = L.DomUtil.create("button", "", zoomButtons);
 const zoomOut = L.DomUtil.create("button", "", zoomButtons);
+const coverageControls = L.DomUtil.create("div", "map-coverage-control", map.getContainer());
+const layerControls = L.DomUtil.create("div", "map-layer-control", map.getContainer());
+const coverageButtons = new Map();
+const coverageLayers = new Map();
+const layerButtons = new Map();
 
 zoomIn.type = "button";
 zoomIn.textContent = "+";
@@ -24,32 +35,79 @@ L.DomEvent.disableScrollPropagation(zoomButtons);
 L.DomEvent.on(zoomIn, "click", () => map.zoomIn());
 L.DomEvent.on(zoomOut, "click", () => map.zoomOut());
 
-L.tileLayer(
+L.DomEvent.disableClickPropagation(coverageControls);
+L.DomEvent.disableScrollPropagation(coverageControls);
+L.DomEvent.disableClickPropagation(layerControls);
+L.DomEvent.disableScrollPropagation(layerControls);
+
+for (const target of COVERAGE_TARGETS) {
+  const button = L.DomUtil.create("button", "map-coverage-toggle", coverageControls);
+  button.type = "button";
+  button.textContent = target.label;
+  button.title = `Rodyti arba paslėpti ${target.label} zoną`;
+  button.setAttribute("aria-label", `Rodyti arba paslėpti ${target.label} zoną`);
+  button.setAttribute("aria-pressed", "false");
+  L.DomEvent.on(button, "click", () => toggleCoverage(target.companyId));
+  coverageButtons.set(target.companyId, button);
+}
+
+const satelliteLayer = L.layerGroup([
+  L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
   {
     maxZoom: 19,
     attribution:
       "Tiles &copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community"
   }
-).addTo(map);
+  ),
+  L.tileLayer(
+    "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
+    {
+      maxZoom: 19,
+      attribution: "Road labels &copy; Esri",
+      pane: "overlayPane"
+    }
+  ),
+  L.tileLayer(
+    "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
+    {
+      maxZoom: 19,
+      attribution: "Labels &copy; Esri",
+      pane: "overlayPane"
+    }
+  )
+]);
 
-L.tileLayer(
-  "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
+const terrainLayer = L.tileLayer(
+  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",
   {
     maxZoom: 19,
-    attribution: "Road labels &copy; Esri",
-    pane: "overlayPane"
+    attribution: "Topographic map &copy; Esri and contributors"
   }
-).addTo(map);
+);
 
-L.tileLayer(
-  "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}",
-  {
-    maxZoom: 19,
-    attribution: "Labels &copy; Esri",
-    pane: "overlayPane"
-  }
-).addTo(map);
+const baseLayers = new Map([
+  ["terrain", terrainLayer],
+  ["satellite", satelliteLayer]
+]);
+let activeBaseLayer = "satellite";
+
+for (const option of [
+  { id: "terrain", label: "Reljefas" },
+  { id: "satellite", label: "Palydovas" }
+]) {
+  const button = L.DomUtil.create("button", "map-layer-toggle", layerControls);
+  button.type = "button";
+  button.textContent = option.label;
+  button.title = `Rodyti sluoksnį: ${option.label}`;
+  button.setAttribute("aria-label", `Rodyti sluoksnį: ${option.label}`);
+  button.setAttribute("aria-pressed", String(option.id === activeBaseLayer));
+  button.classList.toggle("is-active", option.id === activeBaseLayer);
+  L.DomEvent.on(button, "click", () => setBaseLayer(option.id));
+  layerButtons.set(option.id, button);
+}
+
+satelliteLayer.addTo(map);
 
 const clusterLayer = L.markerClusterGroup({
   showCoverageOnHover: false,
@@ -66,6 +124,49 @@ const cityCount = document.getElementById("cityCount");
 
 let companies = [];
 let markers = new Map();
+
+function setBaseLayer(layerId) {
+  if (layerId === activeBaseLayer) return;
+  const nextLayer = baseLayers.get(layerId);
+  if (!nextLayer) return;
+  const currentLayer = baseLayers.get(activeBaseLayer);
+  if (currentLayer && map.hasLayer(currentLayer)) map.removeLayer(currentLayer);
+  nextLayer.addTo(map);
+  activeBaseLayer = layerId;
+  for (const [id, button] of layerButtons) {
+    const isActive = id === activeBaseLayer;
+    button.classList.toggle("is-active", isActive);
+    button.setAttribute("aria-pressed", String(isActive));
+  }
+}
+
+function toggleCoverage(companyId) {
+  const button = coverageButtons.get(companyId);
+  const existingLayer = coverageLayers.get(companyId);
+  if (existingLayer) {
+    map.removeLayer(existingLayer);
+    coverageLayers.delete(companyId);
+    button?.classList.remove("is-active");
+    button?.setAttribute("aria-pressed", "false");
+    return;
+  }
+
+  const company = companies.find((item) => item.company_id === companyId);
+  if (!company || !Number.isFinite(company.latitude) || !Number.isFinite(company.longitude)) return;
+  const circle = L.circle([company.latitude, company.longitude], {
+    radius: COVERAGE_RADIUS_METERS,
+    color: "#0f766e",
+    weight: 2,
+    opacity: 0.8,
+    fillColor: "#0f766e",
+    fillOpacity: 0.14,
+    interactive: false
+  }).addTo(map);
+  coverageLayers.set(companyId, circle);
+  button?.classList.add("is-active");
+  button?.setAttribute("aria-pressed", "true");
+  map.fitBounds(circle.getBounds(), { padding: [24, 24] });
+}
 
 function refreshMapSize() {
   map.invalidateSize({ animate: false });
