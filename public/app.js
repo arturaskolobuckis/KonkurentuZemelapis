@@ -6,9 +6,10 @@ const map = L.map("map", {
 });
 
 const COVERAGE_TARGETS = [
-  { companyId: "betono-centras-vilnius", label: "Riovonių 15 km keliais", color: "#0f766e" },
-  { companyId: "betono-centras-vilnius-metalo", label: "Metalo 15 km keliais", color: "#2563eb" },
-  { companyId: "betono-centras-vilnius-zariju", label: "Žarijų 15 km keliais", color: "#d97706" }
+  { zoneId: "betono-centras-vilnius", label: "Riovonių 15 km keliais", color: "#0f766e" },
+  { zoneId: "betono-centras-vilnius-15-30km", label: "Riovonių 15–30 km keliais", color: "#7c3aed" },
+  { zoneId: "betono-centras-vilnius-metalo", label: "Metalo 15 km keliais", color: "#2563eb" },
+  { zoneId: "betono-centras-vilnius-zariju", label: "Žarijų 15 km keliais", color: "#d97706" }
 ];
 
 const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());
@@ -48,8 +49,8 @@ for (const target of COVERAGE_TARGETS) {
   button.setAttribute("aria-label", `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`);
   button.setAttribute("aria-pressed", "false");
   button.style.setProperty("--coverage-color", target.color);
-  L.DomEvent.on(button, "click", () => toggleCoverage(target.companyId));
-  coverageButtons.set(target.companyId, button);
+  L.DomEvent.on(button, "click", () => toggleCoverage(target.zoneId));
+  coverageButtons.set(target.zoneId, button);
 }
 
 const satelliteLayer = L.layerGroup([
@@ -142,18 +143,18 @@ function setBaseLayer(layerId) {
   }
 }
 
-function toggleCoverage(companyId) {
-  const button = coverageButtons.get(companyId);
-  const existingLayer = coverageLayers.get(companyId);
+function toggleCoverage(zoneId) {
+  const button = coverageButtons.get(zoneId);
+  const existingLayer = coverageLayers.get(zoneId);
   if (existingLayer) {
     map.removeLayer(existingLayer);
-    coverageLayers.delete(companyId);
+    coverageLayers.delete(zoneId);
     button?.classList.remove("is-active");
     button?.setAttribute("aria-pressed", "false");
     return;
   }
 
-  const feature = driveZones.get(companyId);
+  const feature = driveZones.get(zoneId);
   if (!feature) return;
   const color = feature.properties?.color || "#0f766e";
   const zone = L.geoJSON(feature, {
@@ -162,11 +163,12 @@ function toggleCoverage(companyId) {
       weight: 2,
       opacity: 0.85,
       fillColor: color,
-      fillOpacity: 0.14
+      fillOpacity: 0.14,
+      fillRule: "evenodd"
     },
     interactive: false
   }).addTo(map);
-  coverageLayers.set(companyId, zone);
+  coverageLayers.set(zoneId, zone);
   button?.classList.add("is-active");
   button?.setAttribute("aria-pressed", "true");
   map.fitBounds(zone.getBounds(), { padding: [24, 24] });
@@ -182,12 +184,12 @@ function validateDriveZones(payload) {
   const features = payload.features || [];
   const zones = new Map(
     features
-      .filter((feature) => feature.properties?.company_id)
-      .map((feature) => [feature.properties.company_id, feature])
+      .filter((feature) => feature.properties?.zone_id || feature.properties?.company_id)
+      .map((feature) => [feature.properties.zone_id || feature.properties.company_id, feature])
   );
   for (const target of COVERAGE_TARGETS) {
-    if (!zones.has(target.companyId)) {
-      throw new Error(`Nerasta 15 km važiavimo zona: ${target.label}`);
+    if (!zones.has(target.zoneId)) {
+      throw new Error(`Nerasta važiavimo zona: ${target.label}`);
     }
   }
   return zones;

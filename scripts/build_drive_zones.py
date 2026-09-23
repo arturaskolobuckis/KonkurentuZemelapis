@@ -29,12 +29,19 @@ TARGETS = [
     },
 ]
 
+RING_TARGET = {
+    "zone_id": "betono-centras-vilnius-15-30km",
+    "company_id": "betono-centras-vilnius",
+    "label": "Riovonių 15–30 km keliais",
+    "color": "#7c3aed",
+}
 
-def fetch_drive_zone(company: dict, target: dict) -> dict:
+
+def fetch_drive_zone(company: dict, target: dict, distance_km: int = 15) -> dict:
     payload = {
         "locations": [{"lat": company["latitude"], "lon": company["longitude"]}],
         "costing": "auto",
-        "contours": [{"distance": 15, "color": target["color"].lstrip("#")}],
+        "contours": [{"distance": distance_km, "color": target["color"].lstrip("#")}],
         "polygons": True,
         "denoise": 0.5,
         "generalize": 100,
@@ -65,14 +72,42 @@ def fetch_drive_zone(company: dict, target: dict) -> dict:
     return {
         "type": "Feature",
         "properties": {
+            "zone_id": target.get("zone_id", target["company_id"]),
             "company_id": target["company_id"],
             "label": target["label"],
             "travel_mode": "automobiliu",
-            "distance_km": 15,
+            "distance_km": distance_km,
             "color": target["color"],
             "source": "Valhalla / OpenStreetMap",
         },
         "geometry": polygon["geometry"],
+    }
+
+
+def build_drive_band(inner_zone: dict, outer_zone: dict) -> dict:
+    inner_geometry = inner_zone["geometry"]
+    outer_geometry = outer_zone["geometry"]
+    if inner_geometry["type"] != "Polygon" or outer_geometry["type"] != "Polygon":
+        raise RuntimeError("Riovonių 15–30 km juostai reikalingos Polygon geometrijos")
+
+    inner_ring = list(reversed(inner_geometry["coordinates"][0]))
+    return {
+        "type": "Feature",
+        "properties": {
+            "zone_id": RING_TARGET["zone_id"],
+            "company_id": RING_TARGET["company_id"],
+            "label": RING_TARGET["label"],
+            "travel_mode": "automobiliu",
+            "distance_km": 15,
+            "inner_distance_km": 15,
+            "outer_distance_km": 30,
+            "color": RING_TARGET["color"],
+            "source": "Valhalla / OpenStreetMap",
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [*outer_geometry["coordinates"], inner_ring],
+        },
     }
 
 
@@ -88,9 +123,22 @@ def main() -> None:
             raise RuntimeError(f"Nerastas įrašas {target['company_id']}")
         features.append(fetch_drive_zone(company, target))
 
+    riovoniu_company = companies[RING_TARGET["company_id"]]
+    riovoniu_inner_zone = next(
+        feature
+        for feature in features
+        if feature["properties"]["zone_id"] == RING_TARGET["company_id"]
+    )
+    riovoniu_outer_zone = fetch_drive_zone(
+        riovoniu_company,
+        RING_TARGET,
+        distance_km=30,
+    )
+    features.append(build_drive_band(riovoniu_inner_zone, riovoniu_outer_zone))
+
     output = {
         "type": "FeatureCollection",
-        "name": "Betono centro 15 km automobiliu pasiekiamos zonos",
+        "name": "Betono centro automobiliu pasiekiamos zonos",
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "source": "Valhalla routing engine, OpenStreetMap road network",
         "features": features,
@@ -99,7 +147,7 @@ def main() -> None:
         json.dumps(output, ensure_ascii=False, indent=2) + "\n",
         encoding="utf-8",
     )
-    print(f"Built {OUTPUT_PATH.relative_to(ROOT)} for {len(features)} plants")
+    print(f"Built {OUTPUT_PATH.relative_to(ROOT)} with {len(features)} zones")
 
 
 if __name__ == "__main__":
