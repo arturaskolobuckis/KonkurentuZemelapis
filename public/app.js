@@ -7,7 +7,8 @@ const map = L.map("map", {
 
 const COVERAGE_TARGETS = [
   { companyId: "betono-centras-vilnius", label: "Riovonių 15 km keliais", color: "#0f766e" },
-  { companyId: "betono-centras-vilnius-metalo", label: "Metalo 15 km keliais", color: "#2563eb" }
+  { companyId: "betono-centras-vilnius-metalo", label: "Metalo 15 km keliais", color: "#2563eb" },
+  { companyId: "betono-centras-vilnius-zariju", label: "Žarijų 15 km keliais", color: "#d97706" }
 ];
 
 const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());

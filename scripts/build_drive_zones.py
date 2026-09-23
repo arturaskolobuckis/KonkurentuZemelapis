@@ -22,6 +22,11 @@ TARGETS = [
         "label": "Metalo g. 19B",
         "color": "#2563eb",
     },
+    {
+        "company_id": "betono-centras-vilnius-zariju",
+        "label": "Žarijų g. 6A",
+        "color": "#d97706",
+    },
 ]
 
 
