@@ -61,13 +61,13 @@
   },
   {
     "company_id": "heidelberg-vilnius-siaures",
-    "query": "Šiaurės g. 2, Vilnius, Vilniaus m. sav., Lietuva",
-    "lat": 54.6921358,
-    "lon": 25.3937728,
+    "query": "https://maps.app.goo.gl/WuHkJbkmPjqkPWgL8",
+    "lat": 55.774886,
+    "lon": 21.160809,
     "score": 100.0,
-    "type": "PointAddress",
-    "match": "Šiaurės g. 2, 11101, Vilnius, Vilniaus m. sav.",
-    "quality": "Tikslus adreso taškas"
+    "type": "UserProvidedGoogleMapsPoint",
+    "match": "Glaudėnų kaimas, Sendvario seniūnija, Klaipėdos rajono savivaldybė, Klaipėdos apskritis",
+    "quality": "Tikslus naudotojo pateiktos Google Maps nuorodos taškas; adresas patikslintas reverse-geokodavimu"
   },
   {
     "company_id": "heidelberg-vilnius-sandeliu",
