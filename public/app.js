@@ -5,10 +5,9 @@ const map = L.map("map", {
   zoomControl: false
 });
 
-const COVERAGE_RADIUS_METERS = 15000;
 const COVERAGE_TARGETS = [
-  { companyId: "betono-centras-vilnius", label: "Riovonių 15 km" },
-  { companyId: "betono-centras-vilnius-metalo", label: "Metalo 15 km" }
+  { companyId: "betono-centras-vilnius", label: "Riovonių 15 km keliais", color: "#0f766e" },
+  { companyId: "betono-centras-vilnius-metalo", label: "Metalo 15 km keliais", color: "#2563eb" }
 ];
 
 const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());
@@ -44,21 +43,22 @@ for (const target of COVERAGE_TARGETS) {
   const button = L.DomUtil.create("button", "map-coverage-toggle", coverageControls);
   button.type = "button";
   button.textContent = target.label;
-  button.title = `Rodyti arba paslėpti ${target.label} zoną`;
-  button.setAttribute("aria-label", `Rodyti arba paslėpti ${target.label} zoną`);
+  button.title = `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`;
+  button.setAttribute("aria-label", `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`);
   button.setAttribute("aria-pressed", "false");
+  button.style.setProperty("--coverage-color", target.color);
   L.DomEvent.on(button, "click", () => toggleCoverage(target.companyId));
   coverageButtons.set(target.companyId, button);
 }
 
 const satelliteLayer = L.layerGroup([
   L.tileLayer(
-  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
-  {
-    maxZoom: 19,
-    attribution:
-      "Tiles &copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community"
-  }
+    "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+    {
+      maxZoom: 19,
+      attribution:
+        "Tiles &copy; Esri, Maxar, Earthstar Geographics, and the GIS User Community"
+    }
   ),
   L.tileLayer(
     "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
@@ -124,6 +124,7 @@ const cityCount = document.getElementById("cityCount");
 
 let companies = [];
 let markers = new Map();
+let driveZones = new Map();
 
 function setBaseLayer(layerId) {
   if (layerId === activeBaseLayer) return;
@@ -151,21 +152,44 @@ function toggleCoverage(companyId) {
     return;
   }
 
-  const company = companies.find((item) => item.company_id === companyId);
-  if (!company || !Number.isFinite(company.latitude) || !Number.isFinite(company.longitude)) return;
-  const circle = L.circle([company.latitude, company.longitude], {
-    radius: COVERAGE_RADIUS_METERS,
-    color: "#0f766e",
-    weight: 2,
-    opacity: 0.8,
-    fillColor: "#0f766e",
-    fillOpacity: 0.14,
+  const feature = driveZones.get(companyId);
+  if (!feature) return;
+  const color = feature.properties?.color || "#0f766e";
+  const zone = L.geoJSON(feature, {
+    style: {
+      color,
+      weight: 2,
+      opacity: 0.85,
+      fillColor: color,
+      fillOpacity: 0.14
+    },
     interactive: false
   }).addTo(map);
-  coverageLayers.set(companyId, circle);
+  coverageLayers.set(companyId, zone);
   button?.classList.add("is-active");
   button?.setAttribute("aria-pressed", "true");
-  map.fitBounds(circle.getBounds(), { padding: [24, 24] });
+  map.fitBounds(zone.getBounds(), { padding: [24, 24] });
+}
+
+function addDriveZoneAttribution() {
+  map.attributionControl.addAttribution(
+    'Važiavimo zonos &copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a>, Valhalla'
+  );
+}
+
+function validateDriveZones(payload) {
+  const features = payload.features || [];
+  const zones = new Map(
+    features
+      .filter((feature) => feature.properties?.company_id)
+      .map((feature) => [feature.properties.company_id, feature])
+  );
+  for (const target of COVERAGE_TARGETS) {
+    if (!zones.has(target.companyId)) {
+      throw new Error(`Nerasta 15 km važiavimo zona: ${target.label}`);
+    }
+  }
+  return zones;
 }
 
 function refreshMapSize() {
@@ -312,10 +336,19 @@ function renderMap() {
 }
 
 async function init() {
-  const response = await fetch("data/companies.json", { cache: "no-store" });
-  if (!response.ok) throw new Error(`Nepavyko įkelti duomenų: ${response.status}`);
-  const payload = await response.json();
-  companies = payload.companies || [];
+  const [companiesResponse, zonesResponse] = await Promise.all([
+    fetch("data/companies.json", { cache: "no-store" }),
+    fetch("data/drive-zones-15km.geojson", { cache: "no-store" })
+  ]);
+  if (!companiesResponse.ok) throw new Error(`Nepavyko įkelti duomenų: ${companiesResponse.status}`);
+  if (!zonesResponse.ok) throw new Error(`Nepavyko įkelti važiavimo zonų: ${zonesResponse.status}`);
+  const [companiesPayload, zonesPayload] = await Promise.all([
+    companiesResponse.json(),
+    zonesResponse.json()
+  ]);
+  companies = companiesPayload.companies || [];
+  driveZones = validateDriveZones(zonesPayload);
+  addDriveZoneAttribution();
   populateFilters();
   renderMap();
 }
