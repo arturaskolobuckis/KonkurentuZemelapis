@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T09:23:09.077831+00:00",
+  "generated_at": "2026-09-23T09:44:16.961438+00:00",
   "scope": {
     "country": "Lietuva",
     "cities": "Visa Lietuva",
@@ -2053,6 +2053,37 @@
       "coordinate_match_score": 100.0,
       "coordinate_match_type": "UserProvidedGoogleMapsPoint",
       "coordinate_quality": "Tikslus naudotojo pateiktos Google Maps nuorodos taškas"
+    },
+    {
+      "company_id": "pabrades-betonas-pabrade",
+      "company_code": "306177188",
+      "name": "UAB Pabradės betonas",
+      "brand": "Pabradės betonas",
+      "market_role": "Konkurentas",
+      "city": "Pabradė",
+      "municipality": "Švenčionių r. sav.",
+      "address": "Vilniaus g. 161, Pabradė, LT-18177 Švenčionių r.",
+      "latitude": 54.9758768,
+      "longitude": 25.7373849,
+      "activity_type": "ready_mix_concrete",
+      "activity_label": "Betono mišiniai",
+      "concrete_plant_name": "Liebherr (tikėtina)",
+      "concrete_plant_mixer": "3 m³",
+      "concrete_plant_capacity": "60 m³/val.",
+      "concrete_plant_silos_count": "3x65 t",
+      "concrete_plant_description": "UAB Pabradės betonas Vilniaus g. 161, Pabradėje, gamina sertifikuotą normalųjį betoną ir oficialiai nurodo dirbanti 50 km spinduliu aplink Pabradę. Oficialios galerijos nuotraukose matoma stacionari gamybos bazė su trimis cemento silosais. Mazgo gamintojas tikėtinai Liebherr pagal oficialiose nuotraukose matomą Liebherr įrangą ir gamyklos konstrukcijos vizualinius požymius; gamintojo lentelė viešai neparodyta.",
+      "classification_confidence": 0.72,
+      "website": "https://www.pabradesbetonas.lt/",
+      "source_url": "https://www.pabradesbetonas.lt/",
+      "plant_source_url": "https://www.pabradesbetonas.lt/galerija/",
+      "manual_note": "Adresas, įmonės kodas ir betono gamyba patvirtinti oficialioje svetainėje bei viešame gamybos kontrolės sertifikate. Koordinatės paimtos iš oficialioje svetainėje pateiktos Google Maps nuorodos. Maišyklės tūris 3 m³, realus našumas 60 m³/val. ir silosai 3x65 t įrašyti pagal naudotojo pateiktą informaciją. Gamintojas Liebherr nurodytas kaip tikėtinas pagal oficialios galerijos nuotraukas; viešo gamintojo ženklinimo ant paties mazgo nerasta.",
+      "last_updated": "2026-09-23",
+      "coordinate_source_name": "Oficiali Pabradės betono Google Maps nuoroda",
+      "coordinate_source_url": "https://maps.app.goo.gl/TQBCVR8DczDRvQaeA",
+      "coordinate_match_address": "Vilniaus g. 161, Pabradė, 18177 Švenčionių r. sav.",
+      "coordinate_match_score": 100.0,
+      "coordinate_match_type": "OfficialGoogleMapsPoint",
+      "coordinate_quality": "Tikslus oficialioje svetainėje pateiktos Google Maps nuorodos taškas"
     }
   ]
 }
