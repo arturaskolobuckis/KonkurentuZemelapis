@@ -5,17 +5,35 @@ const map = L.map("map", {
   zoomControl: false
 });
 
-const COVERAGE_TARGETS = [
+const COVERAGE_TARGETS_RIGHT = [
   { zoneId: "betono-centras-vilnius", label: "Riovonių 15 km keliais", color: "#0f766e" },
   { zoneId: "betono-centras-vilnius-15-30km", label: "Riovonių 15–30 km keliais", color: "#7c3aed" },
   { zoneId: "betono-centras-vilnius-metalo", label: "Metalo 15 km keliais", color: "#2563eb" },
   { zoneId: "betono-centras-vilnius-zariju", label: "Žarijų 15 km keliais", color: "#d97706" }
 ];
 
+const COVERAGE_TARGETS_LEFT = [
+  { zoneId: "betono-centras-vilnius-10km", label: "Riovonių 10 km keliais", color: "#0f766e" },
+  { zoneId: "betono-centras-vilnius-10-20km", label: "Riovonių 10–20 km keliais", color: "#7c3aed" },
+  { zoneId: "betono-centras-vilnius-metalo-10km", label: "Metalo 10 km keliais", color: "#2563eb" },
+  { zoneId: "betono-centras-vilnius-zariju-10km", label: "Žarijų 10 km keliais", color: "#d97706" }
+];
+
+const COVERAGE_TARGETS = [...COVERAGE_TARGETS_LEFT, ...COVERAGE_TARGETS_RIGHT];
+
 const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());
 const zoomIn = L.DomUtil.create("button", "", zoomButtons);
 const zoomOut = L.DomUtil.create("button", "", zoomButtons);
-const coverageControls = L.DomUtil.create("div", "map-coverage-control", map.getContainer());
+const coverageControlsLeft = L.DomUtil.create(
+  "div",
+  "map-coverage-control map-coverage-control--left",
+  map.getContainer()
+);
+const coverageControlsRight = L.DomUtil.create(
+  "div",
+  "map-coverage-control map-coverage-control--right",
+  map.getContainer()
+);
 const layerControls = L.DomUtil.create("div", "map-layer-control", map.getContainer());
 const coverageButtons = new Map();
 const coverageLayers = new Map();
@@ -36,21 +54,28 @@ L.DomEvent.disableScrollPropagation(zoomButtons);
 L.DomEvent.on(zoomIn, "click", () => map.zoomIn());
 L.DomEvent.on(zoomOut, "click", () => map.zoomOut());
 
-L.DomEvent.disableClickPropagation(coverageControls);
-L.DomEvent.disableScrollPropagation(coverageControls);
+for (const controls of [coverageControlsLeft, coverageControlsRight]) {
+  L.DomEvent.disableClickPropagation(controls);
+  L.DomEvent.disableScrollPropagation(controls);
+}
 L.DomEvent.disableClickPropagation(layerControls);
 L.DomEvent.disableScrollPropagation(layerControls);
 
-for (const target of COVERAGE_TARGETS) {
-  const button = L.DomUtil.create("button", "map-coverage-toggle", coverageControls);
-  button.type = "button";
-  button.textContent = target.label;
-  button.title = `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`;
-  button.setAttribute("aria-label", `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`);
-  button.setAttribute("aria-pressed", "false");
-  button.style.setProperty("--coverage-color", target.color);
-  L.DomEvent.on(button, "click", () => toggleCoverage(target.zoneId));
-  coverageButtons.set(target.zoneId, button);
+for (const [controls, targets] of [
+  [coverageControlsLeft, COVERAGE_TARGETS_LEFT],
+  [coverageControlsRight, COVERAGE_TARGETS_RIGHT]
+]) {
+  for (const target of targets) {
+    const button = L.DomUtil.create("button", "map-coverage-toggle", controls);
+    button.type = "button";
+    button.textContent = target.label;
+    button.title = `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`;
+    button.setAttribute("aria-label", `Rodyti arba paslėpti automobiliu pasiekiamą ${target.label} zoną`);
+    button.setAttribute("aria-pressed", "false");
+    button.style.setProperty("--coverage-color", target.color);
+    L.DomEvent.on(button, "click", () => toggleCoverage(target.zoneId));
+    coverageButtons.set(target.zoneId, button);
+  }
 }
 
 const satelliteLayer = L.layerGroup([

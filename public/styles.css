@@ -270,7 +270,6 @@ input:focus {
 .map-coverage-control,
 .map-layer-control {
   position: absolute;
-  right: 16px;
   z-index: 10000;
 }
 
@@ -278,6 +277,15 @@ input:focus {
   display: grid;
   gap: 6px;
   bottom: 132px;
+}
+
+.map-coverage-control--left {
+  left: 16px;
+}
+
+.map-coverage-control--right,
+.map-layer-control {
+  right: 16px;
 }
 
 .map-layer-control {
@@ -412,7 +420,7 @@ input:focus {
   .map-panel {
     flex: 0 0 48vh;
     order: 1;
-    min-height: 360px;
+    min-height: 460px;
   }
 
   h1 {
@@ -424,15 +432,26 @@ input:focus {
     right: 10px;
   }
 
+  .map-coverage-control--left {
+    right: auto;
+    left: 10px;
+  }
+
   .map-layer-control {
     top: 10px;
   }
 
   .map-coverage-control {
     bottom: 126px;
+    width: calc((100% - 30px) / 2);
   }
 
   .map-coverage-toggle {
-    min-width: 154px;
+    width: 100%;
+    min-width: 0;
+    min-height: 44px;
+    padding: 6px;
+    font-size: 11px;
+    line-height: 1.2;
   }
 }

@@ -29,12 +29,36 @@ TARGETS = [
     },
 ]
 
-RING_TARGET = {
-    "zone_id": "betono-centras-vilnius-15-30km",
-    "company_id": "betono-centras-vilnius",
-    "label": "Riovonių 15–30 km keliais",
-    "color": "#7c3aed",
-}
+TEN_KM_TARGETS = [
+    {
+        "zone_id": f"{target['company_id']}-10km",
+        "company_id": target["company_id"],
+        "label": target["label"],
+        "color": target["color"],
+    }
+    for target in TARGETS
+]
+
+RING_TARGETS = [
+    {
+        "zone_id": "betono-centras-vilnius-10-20km",
+        "company_id": "betono-centras-vilnius",
+        "label": "Riovonių 10–20 km keliais",
+        "color": "#7c3aed",
+        "inner_distance_km": 10,
+        "outer_distance_km": 20,
+        "inner_zone_id": "betono-centras-vilnius-10km",
+    },
+    {
+        "zone_id": "betono-centras-vilnius-15-30km",
+        "company_id": "betono-centras-vilnius",
+        "label": "Riovonių 15–30 km keliais",
+        "color": "#7c3aed",
+        "inner_distance_km": 15,
+        "outer_distance_km": 30,
+        "inner_zone_id": "betono-centras-vilnius",
+    },
+]
 
 
 def fetch_drive_zone(company: dict, target: dict, distance_km: int = 15) -> dict:
@@ -84,24 +108,24 @@ def fetch_drive_zone(company: dict, target: dict, distance_km: int = 15) -> dict
     }
 
 
-def build_drive_band(inner_zone: dict, outer_zone: dict) -> dict:
+def build_drive_band(target: dict, inner_zone: dict, outer_zone: dict) -> dict:
     inner_geometry = inner_zone["geometry"]
     outer_geometry = outer_zone["geometry"]
     if inner_geometry["type"] != "Polygon" or outer_geometry["type"] != "Polygon":
-        raise RuntimeError("Riovonių 15–30 km juostai reikalingos Polygon geometrijos")
+        raise RuntimeError(f"{target['label']} juostai reikalingos Polygon geometrijos")
 
     inner_ring = list(reversed(inner_geometry["coordinates"][0]))
     return {
         "type": "Feature",
         "properties": {
-            "zone_id": RING_TARGET["zone_id"],
-            "company_id": RING_TARGET["company_id"],
-            "label": RING_TARGET["label"],
+            "zone_id": target["zone_id"],
+            "company_id": target["company_id"],
+            "label": target["label"],
             "travel_mode": "automobiliu",
-            "distance_km": 15,
-            "inner_distance_km": 15,
-            "outer_distance_km": 30,
-            "color": RING_TARGET["color"],
+            "distance_km": target["inner_distance_km"],
+            "inner_distance_km": target["inner_distance_km"],
+            "outer_distance_km": target["outer_distance_km"],
+            "color": target["color"],
             "source": "Valhalla / OpenStreetMap",
         },
         "geometry": {
@@ -117,24 +141,28 @@ def main() -> None:
         for company in json.loads(SEED_PATH.read_text(encoding="utf-8"))
     }
     features = []
-    for target in TARGETS:
+    for target, distance_km in [
+        *[(target, 15) for target in TARGETS],
+        *[(target, 10) for target in TEN_KM_TARGETS],
+    ]:
         company = companies.get(target["company_id"])
         if company is None:
             raise RuntimeError(f"Nerastas įrašas {target['company_id']}")
-        features.append(fetch_drive_zone(company, target))
+        features.append(fetch_drive_zone(company, target, distance_km=distance_km))
 
-    riovoniu_company = companies[RING_TARGET["company_id"]]
-    riovoniu_inner_zone = next(
-        feature
-        for feature in features
-        if feature["properties"]["zone_id"] == RING_TARGET["company_id"]
-    )
-    riovoniu_outer_zone = fetch_drive_zone(
-        riovoniu_company,
-        RING_TARGET,
-        distance_km=30,
-    )
-    features.append(build_drive_band(riovoniu_inner_zone, riovoniu_outer_zone))
+    for target in RING_TARGETS:
+        riovoniu_company = companies[target["company_id"]]
+        riovoniu_inner_zone = next(
+            feature
+            for feature in features
+            if feature["properties"]["zone_id"] == target["inner_zone_id"]
+        )
+        riovoniu_outer_zone = fetch_drive_zone(
+            riovoniu_company,
+            target,
+            distance_km=target["outer_distance_km"],
+        )
+        features.append(build_drive_band(target, riovoniu_inner_zone, riovoniu_outer_zone))
 
     output = {
         "type": "FeatureCollection",
