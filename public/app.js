@@ -5,16 +5,9 @@ const map = L.map("map", {
   zoomControl: false
 });
 
-const COVERAGE_RADIUS_OPTIONS = [
-  { label: "15 km", meters: 15000 },
-  { label: "35 km", meters: 35000 }
-];
-
 const zoomButtons = L.DomUtil.create("div", "map-zoom-control", map.getContainer());
 const zoomIn = L.DomUtil.create("button", "", zoomButtons);
 const zoomOut = L.DomUtil.create("button", "", zoomButtons);
-const coverageControls = L.DomUtil.create("div", "map-coverage-control", map.getContainer());
-const coverageButtons = new Map();
 
 zoomIn.type = "button";
 zoomIn.textContent = "+";
@@ -30,22 +23,6 @@ L.DomEvent.disableClickPropagation(zoomButtons);
 L.DomEvent.disableScrollPropagation(zoomButtons);
 L.DomEvent.on(zoomIn, "click", () => map.zoomIn());
 L.DomEvent.on(zoomOut, "click", () => map.zoomOut());
-
-L.DomEvent.disableClickPropagation(coverageControls);
-L.DomEvent.disableScrollPropagation(coverageControls);
-
-for (const option of COVERAGE_RADIUS_OPTIONS) {
-  const button = L.DomUtil.create("button", "map-coverage-toggle", coverageControls);
-  button.type = "button";
-  button.textContent = option.label;
-  button.title = `Rodyti arba paslėpti ${option.label} zonas`;
-  button.setAttribute("aria-label", `Rodyti arba paslėpti ${option.label} zonas`);
-  button.setAttribute("aria-pressed", "false");
-  L.DomEvent.on(button, "click", () => {
-    toggleCoverageRadius(option.meters);
-  });
-  coverageButtons.set(option.meters, button);
-}
 
 L.tileLayer(
   "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
@@ -78,7 +55,6 @@ const clusterLayer = L.markerClusterGroup({
   showCoverageOnHover: false,
   spiderfyOnMaxZoom: true
 });
-const coverageLayer = L.layerGroup();
 
 const cityFilter = document.getElementById("cityFilter");
 const activityFilter = document.getElementById("activityFilter");
@@ -90,8 +66,6 @@ const cityCount = document.getElementById("cityCount");
 
 let companies = [];
 let markers = new Map();
-let coverageVisible = false;
-let coverageRadiusMeters = 35000;
 
 function refreshMapSize() {
   map.invalidateSize({ animate: false });
@@ -106,54 +80,6 @@ function markerIcon(company) {
     iconAnchor: [17, 17],
     popupAnchor: [0, -17]
   });
-}
-
-function updateCoverageButton() {
-  for (const [radius, button] of coverageButtons) {
-    const isActive = coverageVisible && radius === coverageRadiusMeters;
-    button.classList.toggle("is-active", isActive);
-    button.setAttribute("aria-pressed", String(isActive));
-  }
-}
-
-function coverageCircle(center) {
-  return L.circle(center, {
-    radius: coverageRadiusMeters,
-    color: "#0f766e",
-    weight: 2,
-    opacity: 0.72,
-    fillColor: "#0f766e",
-    fillOpacity: 0.12,
-    interactive: false
-  });
-}
-
-function rebuildCoverageLayer(items = filteredCompanies()) {
-  coverageLayer.clearLayers();
-  for (const company of items) {
-    if (!Number.isFinite(company.latitude) || !Number.isFinite(company.longitude)) continue;
-    coverageLayer.addLayer(coverageCircle([company.latitude, company.longitude]));
-  }
-}
-
-function setCoverageVisible(visible) {
-  coverageVisible = visible;
-  updateCoverageButton();
-  if (coverageVisible) {
-    if (!map.hasLayer(coverageLayer)) map.addLayer(coverageLayer);
-  } else if (map.hasLayer(coverageLayer)) {
-    map.removeLayer(coverageLayer);
-  }
-}
-
-function toggleCoverageRadius(radiusMeters) {
-  if (coverageVisible && coverageRadiusMeters === radiusMeters) {
-    setCoverageVisible(false);
-    return;
-  }
-  coverageRadiusMeters = radiusMeters;
-  rebuildCoverageLayer();
-  setCoverageVisible(true);
 }
 
 function escapeHtml(value) {
@@ -272,10 +198,7 @@ function renderMap() {
     clusterLayer.addLayer(marker);
   }
 
-  rebuildCoverageLayer(items);
   if (!map.hasLayer(clusterLayer)) map.addLayer(clusterLayer);
-  if (coverageVisible && !map.hasLayer(coverageLayer)) map.addLayer(coverageLayer);
-  if (!coverageVisible && map.hasLayer(coverageLayer)) map.removeLayer(coverageLayer);
   if (clusterLayer.getLayers().length > 0) {
     map.fitBounds(clusterLayer.getBounds(), { padding: [32, 32], maxZoom: 11 });
   }
@@ -293,7 +216,6 @@ async function init() {
   const payload = await response.json();
   companies = payload.companies || [];
   populateFilters();
-  updateCoverageButton();
   renderMap();
 }
 

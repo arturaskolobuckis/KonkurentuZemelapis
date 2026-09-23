@@ -80,6 +80,16 @@
     "quality": "Tikslus adreso taškas"
   },
   {
+    "company_id": "heidelberg-avizieniai-klevu",
+    "query": "Klevų g. 2, Avižieniai, Vilniaus r. sav., Lietuva",
+    "lat": 54.760788043384,
+    "lon": 25.179476693822,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Klevų g. 2, 14192, Avižienių seniūnija, Avižienių kaimas, Vilniaus rajono savivaldybė, Vilniaus apskritis",
+    "quality": "Tikslus adreso taškas"
+  },
+  {
     "company_id": "heidelberg-kaunas",
     "query": "Technikos g. 7K, Kaunas, Kauno m. sav., Lietuva",
     "lat": 54.9093181,
@@ -390,16 +400,6 @@
     "quality": "Tikslus adreso taškas"
   },
   {
-    "company_id": "seldra-vilnius",
-    "query": "O. Miciūtės g. 7, Vilnius, Vilniaus m. sav., Lietuva",
-    "lat": 54.7424422,
-    "lon": 25.2535408,
-    "score": 100.0,
-    "type": "PointAddress",
-    "match": "Onos Miciūtės g. 7, 08442, Vilnius, Vilniaus m. sav.",
-    "quality": "Tikslus adreso taškas"
-  },
-  {
     "company_id": "utenos-betonas-utena",
     "query": "Metalo g. 9B, Utena, Utenos r. sav., Lietuva",
     "lat": 55.4947607,
@@ -477,16 +477,6 @@
     "score": 98.33,
     "type": "PointAddress",
     "match": "Bitininkų g. 13, 14271, Anavilis, Paberžės sen., Vilniaus r. sav.",
-    "quality": "Tikslus adreso taškas"
-  },
-  {
-    "company_id": "altimas-avizieniai",
-    "query": "Vaikystės g. 10, Avižieniai, Vilniaus r., Vilniaus r. sav., Lietuva",
-    "lat": 54.7579388,
-    "lon": 25.1878461,
-    "score": 98.4,
-    "type": "PointAddress",
-    "match": "Vaikystės g. 10, 14184, Avižieniai, Avižienių sen., Vilniaus r. sav.",
     "quality": "Tikslus adreso taškas"
   },
   {
@@ -588,6 +578,16 @@
     "type": "UserProvidedMapPoint",
     "match": "Žarijų g. 6A, Vilnius",
     "quality": "Naudotojo pateiktos Google Maps nuorodos taškas"
+  },
+  {
+    "company_id": "betono-centras-vilnius-metalo",
+    "query": "Metalo g. 19B, Vilnius, Vilniaus m. sav., Lietuva",
+    "lat": 54.633332907517,
+    "lon": 25.265130105086,
+    "score": 100.0,
+    "type": "PointAddress",
+    "match": "Metalo g. 19B, 02190, Vilnius, Vilniaus miesto, Vilniaus miesto savivaldybė, Vilniaus apskritis",
+    "quality": "Tikslus adreso taškas"
   },
   {
     "company_id": "betono-centras-rudningai",
