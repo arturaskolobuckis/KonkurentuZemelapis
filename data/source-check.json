@@ -1,6 +1,6 @@
 {
-  "checked_at": "2026-09-21T10:22:26.642678+00:00",
-  "rows": 69,
+  "checked_at": "2026-09-28T11:24:35.873663+00:00",
+  "rows": 66,
   "scope": "Visa Lietuva",
   "issues": [],
   "sources": [
@@ -11,6 +11,16 @@
     },
     {
       "url": "https://betonastaurageje.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://betonika.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://betonocentras.lt/",
       "ok": true,
       "status": 200
     },
@@ -65,17 +75,7 @@
       "status": 200
     },
     {
-      "url": "https://inhus.eu/",
-      "ok": true,
-      "status": 200
-    },
-    {
       "url": "https://inroma.lt/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://pamariogrupe.lt/",
       "ok": true,
       "status": 200
     },
@@ -100,6 +100,11 @@
       "status": 200
     },
     {
+      "url": "https://spsc.lt/registrai/regsapp/ser_produktai_view.php?editid1=13061",
+      "ok": true,
+      "status": 200
+    },
+    {
       "url": "https://statkasta.lt/kontaktai/",
       "ok": true,
       "status": 200
@@ -115,32 +120,12 @@
       "status": 200
     },
     {
-      "url": "https://www.1551.lt/re-betono-konstrukcijos-uab-betonas-cementas-betono-siurblys-pamatu-blokai-kretingoje-104253/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://www.1551.lt/sausta-uab-240915/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://www.1551.lt/seldra-uab-prekinio-betono-gamyba-ir-prekyba-vilniuje-219193/",
-      "ok": true,
-      "status": 200
-    },
-    {
       "url": "https://www.autokausta.lt/apie-mus/betonas/",
       "ok": true,
       "status": 200
     },
     {
       "url": "https://www.betonas.heidelbergmaterials.lt/lt/kontaktine-informacija-0",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://www.betoneura.lt/kontaktai/",
       "ok": true,
       "status": 200
     },
@@ -155,7 +140,17 @@
       "status": 200
     },
     {
+      "url": "https://www.gevalda.lt/paslaugos/gamyba",
+      "ok": true,
+      "status": 200
+    },
+    {
       "url": "https://www.kaunogelzbetonis.lt/kontaktai/",
+      "ok": true,
+      "status": 200
+    },
+    {
+      "url": "https://www.pabradesbetonas.lt/",
       "ok": true,
       "status": 200
     },
@@ -211,11 +206,6 @@
     },
     {
       "url": "https://www.utenosbetonas.lt/kontaktai/",
-      "ok": true,
-      "status": 200
-    },
-    {
-      "url": "https://www.vbg.lt/",
       "ok": true,
       "status": 200
     },
