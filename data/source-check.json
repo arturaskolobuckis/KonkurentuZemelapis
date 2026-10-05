@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-09-28T11:24:35.873663+00:00",
+  "checked_at": "2026-10-05T12:00:17.011907+00:00",
   "rows": 66,
   "scope": "Visa Lietuva",
   "issues": [],
@@ -96,8 +96,8 @@
     },
     {
       "url": "https://sodbeta.lt/",
-      "ok": true,
-      "status": 200
+      "ok": false,
+      "error": "<urlopen error [Errno 111] Connection refused>"
     },
     {
       "url": "https://spsc.lt/registrai/regsapp/ser_produktai_view.php?editid1=13061",
