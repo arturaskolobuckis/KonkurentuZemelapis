@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-10-19T10:28:15.341810+00:00",
+  "checked_at": "2026-10-26T10:43:47.360359+00:00",
   "rows": 65,
   "scope": "Visa Lietuva",
   "issues": [],
@@ -11,8 +11,8 @@
     },
     {
       "url": "https://betonastaurageje.lt/kontaktai/",
-      "ok": false,
-      "error": "<urlopen error timed out>"
+      "ok": true,
+      "status": 200
     },
     {
       "url": "https://betonika.lt/kontaktai/",
@@ -86,8 +86,8 @@
     },
     {
       "url": "https://sbetonas.lt/",
-      "ok": false,
-      "error": "<urlopen error [Errno 101] Network is unreachable>"
+      "ok": true,
+      "status": 200
     },
     {
       "url": "https://sodbeta.lt/",
@@ -101,8 +101,8 @@
     },
     {
       "url": "https://statkasta.lt/kontaktai/",
-      "ok": false,
-      "error": "<urlopen error [Errno 101] Network is unreachable>"
+      "ok": true,
+      "status": 200
     },
     {
       "url": "https://tgb.lt/kontaktai/",
