@@ -1,5 +1,5 @@
 {
-  "checked_at": "2026-11-02T13:01:59.263419+00:00",
+  "checked_at": "2026-11-09T13:34:31.652835+00:00",
   "rows": 65,
   "scope": "Visa Lietuva",
   "issues": [],
@@ -121,8 +121,8 @@
     },
     {
       "url": "https://www.autokausta.lt/apie-mus/betonas/",
-      "ok": true,
-      "status": 200
+      "ok": false,
+      "error": "HTTP Error 404: Not Found"
     },
     {
       "url": "https://www.betonas.heidelbergmaterials.lt/lt/kontaktine-informacija-0",
